@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:main-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -96,17 +97,6 @@ Connection ~ 4650 3350
 Wire Wire Line
 	4650 3800 4650 4700
 Connection ~ 4650 4700
-$Comp
-L NSI45020AT1G U1
-U 1 1 5819D445
-P 5750 4150
-F 0 "U1" H 5750 4050 60  0000 C CNN
-F 1 "NSI45020AT1G" H 5750 4250 60  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 5000 4300 60  0001 C CNN
-F 3 "" H 5000 4300 60  0001 C CNN
-	1    5750 4150
-	1    0    0    -1  
-$EndComp
 Connection ~ 9650 4700
 $Comp
 L LED D1
@@ -140,7 +130,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3800 5050 4150
 Wire Wire Line
-	5050 4150 5150 4150
+	5050 4150 5450 4150
 Wire Wire Line
 	8050 4350 8200 4350
 Wire Wire Line
@@ -149,7 +139,7 @@ Wire Wire Line
 	6600 4650 6600 4700
 Connection ~ 6600 4700
 Wire Wire Line
-	6350 4150 7150 4150
+	6050 4150 7150 4150
 Wire Wire Line
 	6600 4150 6600 4250
 Connection ~ 6600 4150
@@ -233,14 +223,25 @@ $EndComp
 Wire Wire Line
 	7550 3800 7400 3800
 $Comp
-L CP C?
+L CP C1
 U 1 1 5819F45C
 P 7250 3800
-F 0 "C?" H 7275 3900 50  0000 L CNN
+F 0 "C1" H 7275 3900 50  0000 L CNN
 F 1 "10uF" H 7275 3700 50  0000 L CNN
-F 2 "" H 7288 3650 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_D5_L11_P18" H 7288 3650 50  0001 C CNN
 F 3 "" H 7250 3800 50  0000 C CNN
 	1    7250 3800
 	0    -1   -1   0   
+$EndComp
+$Comp
+L NSI45020AT1G U?
+U 1 1 5820831C
+P 5750 4150
+F 0 "U?" H 5750 4000 60  0000 C CNN
+F 1 "NSI45020AT1G" H 5750 4300 60  0000 C CNN
+F 2 "" H 5000 4300 60  0001 C CNN
+F 3 "" H 5000 4300 60  0001 C CNN
+	1    5750 4150
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
