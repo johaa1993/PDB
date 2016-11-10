@@ -49,19 +49,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L IRFB7537PbF Q?
-U 1 1 581F4518
-P 5800 2750
-AR Path="/581F28FF/581F4518" Ref="Q?"  Part="1" 
-AR Path="/581FE101/581FE98D/581F4518" Ref="Q1"  Part="1" 
-F 0 "Q1" H 6000 2825 50  0000 L CNN
-F 1 "IRFB7537PbF" H 6000 2750 50  0000 L CNN
-F 2 "KiCad-Dev:TO-220_Horizontal_LargePads_HeatsinkPad" H 6000 2675 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irfs7537pbf.pdf?fileId=5546d462533600a4015364c3ee2729cb" H 6000 2600 50  0001 L CNN
-	1    5800 2750
-	0    -1   -1   0   
-$EndComp
-$Comp
 L MIC5014 U?
 U 1 1 581F4598
 P 5250 4200
@@ -196,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 4500 6050 4500
 Wire Wire Line
-	6050 4500 6050 2650
+	6050 4500 6050 2050
 Connection ~ 6050 2650
 Wire Wire Line
 	2800 3150 2600 3150
@@ -269,4 +256,52 @@ Text HLabel 3450 3200 0    60   Input ~ 0
 GND
 Wire Wire Line
 	3450 3200 3650 3200
+$Comp
+L CONN_01X03 P6
+U 1 1 5824823A
+P 5800 1650
+F 0 "P6" H 5800 1850 50  0000 C CNN
+F 1 "CONN_01X03" V 5900 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 5800 1650 50  0001 C CNN
+F 3 "" H 5800 1650 50  0000 C CNN
+	1    5800 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2050 5900 2050
+Wire Wire Line
+	5900 2050 5900 1850
+Wire Wire Line
+	5450 2650 5450 1900
+Wire Wire Line
+	5450 1900 5700 1900
+Wire Wire Line
+	5700 1900 5700 1850
+Connection ~ 5450 2650
+Wire Wire Line
+	5800 1850 5800 2000
+Wire Wire Line
+	5800 2000 5550 2000
+Wire Wire Line
+	5550 2000 5550 3000
+Wire Wire Line
+	5550 3000 5850 3000
+Connection ~ 5850 3000
+$Comp
+L BUK9Y4R8-60E Q2
+U 1 1 58248FB0
+P 5800 2750
+F 0 "Q2" H 6150 2850 50  0000 L CNN
+F 1 "BUK9Y4R8-60E" H 6150 2750 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-669_LFPAK" H 6150 2675 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/2053583.pdf?_ga=1.217785489.606791601.1474638083" H 4050 2200 50  0001 L CNN
+	1    5800 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 2500 6050 2500
+Connection ~ 6050 2500
+Wire Wire Line
+	6000 2350 6050 2350
+Connection ~ 6050 2350
 $EndSCHEMATC

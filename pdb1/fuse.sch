@@ -125,7 +125,6 @@ Wire Wire Line
 	4500 2400 5500 2400
 Wire Wire Line
 	4750 2400 4750 2550
-Connection ~ 4750 4100
 Text HLabel 5500 2400 2    60   Output ~ 0
 out+
 Connection ~ 4750 2400
