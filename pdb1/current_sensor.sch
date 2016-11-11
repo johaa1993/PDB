@@ -118,13 +118,9 @@ Wire Wire Line
 Wire Wire Line
 	4650 3400 4950 3400
 Wire Wire Line
-	4950 3400 4950 2850
-Wire Wire Line
 	5750 3700 5750 3400
 Wire Wire Line
 	5750 3400 5450 3400
-Wire Wire Line
-	5450 3400 5450 2850
 Connection ~ 5450 3150
 Text HLabel 6700 4100 2    60   Output ~ 0
 sense
@@ -162,47 +158,8 @@ Wire Wire Line
 Connection ~ 4500 4750
 Wire Wire Line
 	6150 4750 3700 4750
-$Comp
-L CONN_01X02 P5
-U 1 1 58247AF2
-P 5200 2650
-F 0 "P5" H 5200 2800 50  0000 C CNN
-F 1 "CONN_01X02" V 5300 2650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5200 2650 50  0001 C CNN
-F 3 "" H 5200 2650 50  0000 C CNN
-	1    5200 2650
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
-	4550 2850 5150 2850
+	4950 3400 4950 3150
 Wire Wire Line
-	5250 2850 5800 2850
-$Comp
-L CONN_01X01 P7
-U 1 1 582496F0
-P 4550 2550
-F 0 "P7" H 4550 2650 50  0000 C CNN
-F 1 "CONN_01X01" V 4650 2550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4550 2550 50  0001 C CNN
-F 3 "" H 4550 2550 50  0000 C CNN
-	1    4550 2550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4550 2750 4550 2850
-Connection ~ 4950 2850
-$Comp
-L CONN_01X01 P8
-U 1 1 58249867
-P 5800 2550
-F 0 "P8" H 5800 2650 50  0000 C CNN
-F 1 "CONN_01X01" V 5900 2550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5800 2550 50  0001 C CNN
-F 3 "" H 5800 2550 50  0000 C CNN
-	1    5800 2550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5800 2850 5800 2750
-Connection ~ 5450 2850
+	5450 3400 5450 3150
 $EndSCHEMATC

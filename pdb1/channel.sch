@@ -84,18 +84,6 @@ F 3 "" H 6050 1150 50  0000 C CNN
 	1    6050 2350
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 6300 3300 1300 1200
-U 581FE98D
-F0 "kill_sw" 60
-F1 "kill_sw.sch" 60
-F2 "in+" I L 6300 3700 60 
-F3 "enabled2_3.3v" O R 7600 3350 60 
-F4 "enabled1_3.3v" O R 7600 3450 60 
-F5 "enable" I L 6300 3350 60 
-F6 "GND" I L 6300 4450 60 
-F7 "out+" O R 7600 3700 60 
-$EndSheet
 Wire Wire Line
 	3050 4450 3050 4800
 Wire Wire Line
@@ -106,13 +94,9 @@ Connection ~ 4450 4800
 Connection ~ 6000 4800
 Wire Wire Line
 	2550 4800 8100 4800
-Wire Wire Line
-	5750 2250 5800 2250
 Connection ~ 3050 4800
 Wire Wire Line
 	4350 3350 3950 3350
-Wire Wire Line
-	5450 2450 5800 2450
 Text HLabel 2800 3700 0    60   Input ~ 0
 in+
 Text HLabel 8550 3700 2    60   Output ~ 0
@@ -123,164 +107,16 @@ Wire Wire Line
 	3300 3700 2800 3700
 Text HLabel 2550 4800 0    60   Input ~ 0
 GND
-$Comp
-L ZENER D4
-U 1 1 582002DA
-P 7900 1900
-F 0 "D4" H 7900 2000 50  0000 C CNN
-F 1 "3.3v" H 7900 1800 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 7900 1900 50  0001 C CNN
-F 3 "" H 7900 1900 50  0000 C CNN
-	1    7900 1900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ZENER D5
-U 1 1 58200500
-P 8200 1900
-F 0 "D5" H 8200 2000 50  0000 C CNN
-F 1 "3.3v" H 8200 1800 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 8200 1900 50  0001 C CNN
-F 3 "" H 8200 1900 50  0000 C CNN
-	1    8200 1900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ZENER D1
-U 1 1 5820057B
-P 4350 1850
-F 0 "D1" H 4350 1950 50  0000 C CNN
-F 1 "15v" H 4350 1750 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 4350 1850 50  0001 C CNN
-F 3 "" H 4350 1850 50  0000 C CNN
-	1    4350 1850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ZENER D2
-U 1 1 582005F9
-P 5450 1900
-F 0 "D2" H 5450 2000 50  0000 C CNN
-F 1 "3.3v" H 5450 1800 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 5450 1900 50  0001 C CNN
-F 3 "" H 5450 1900 50  0000 C CNN
-	1    5450 1900
-	0    -1   -1   0   
-$EndComp
-Text HLabel 3950 1500 0    60   Input ~ 0
-GND
 Wire Wire Line
-	3950 1500 8200 1500
+	6450 3150 6200 3150
 Wire Wire Line
-	4350 1500 7900 1500
+	4350 1950 4350 3350
 Wire Wire Line
-	7900 1500 7900 1700
+	5600 3150 5850 3150
 Wire Wire Line
-	8200 1500 8200 1700
-Connection ~ 7900 1500
+	5600 2450 5600 3150
 Wire Wire Line
-	4350 1500 4350 1650
-Connection ~ 4350 1500
-Wire Wire Line
-	7900 2100 7900 2550
-Connection ~ 7900 2350
-Wire Wire Line
-	8200 2100 8200 2550
-Wire Wire Line
-	5450 1700 5450 1500
-Connection ~ 5450 1500
-Connection ~ 4350 2350
-Connection ~ 5450 2450
-Wire Wire Line
-	5750 2250 5750 1500
-Connection ~ 5750 1500
-Wire Wire Line
-	6200 3150 6450 3150
-Wire Wire Line
-	6450 2100 6450 2550
-$Comp
-L FUSE F1
-U 1 1 58203F80
-P 4350 2750
-F 0 "F1" H 4450 2800 50  0000 C CNN
-F 1 "FUSE" H 4250 2700 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 4350 2750 50  0001 C CNN
-F 3 "" H 4350 2750 50  0000 C CNN
-	1    4350 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 3000 4350 3350
-Wire Wire Line
-	4350 2050 4350 2500
-Wire Wire Line
-	4350 2350 5800 2350
-$Comp
-L FUSE F2
-U 1 1 582046F6
-P 5450 2800
-F 0 "F2" H 5550 2850 50  0000 C CNN
-F 1 "FUSE" H 5350 2750 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 5450 2800 50  0001 C CNN
-F 3 "" H 5450 2800 50  0000 C CNN
-	1    5450 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5450 2100 5450 2550
-Wire Wire Line
-	5850 3150 5450 3150
-Wire Wire Line
-	5450 3150 5450 3050
-$Comp
-L FUSE F3
-U 1 1 58204DFD
-P 6450 2800
-F 0 "F3" H 6550 2850 50  0000 C CNN
-F 1 "FUSE" H 6350 2750 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 6450 2800 50  0001 C CNN
-F 3 "" H 6450 2800 50  0000 C CNN
-	1    6450 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L ZENER D3
-U 1 1 58204EC7
-P 6450 1900
-F 0 "D3" H 6450 2000 50  0000 C CNN
-F 1 "3.3v" H 6450 1800 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 6450 1900 50  0001 C CNN
-F 3 "" H 6450 1900 50  0000 C CNN
-	1    6450 1900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6450 1500 6450 1700
-Connection ~ 6450 1500
-Wire Wire Line
-	6450 3150 6450 3050
-$Comp
-L FUSE F4
-U 1 1 58206065
-P 7900 2800
-F 0 "F4" H 8000 2850 50  0000 C CNN
-F 1 "FUSE" H 7800 2750 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 7900 2800 50  0001 C CNN
-F 3 "" H 7900 2800 50  0000 C CNN
-	1    7900 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L FUSE F5
-U 1 1 58206220
-P 8200 2800
-F 0 "F5" H 8300 2850 50  0000 C CNN
-F 1 "FUSE" H 8100 2750 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 8200 2800 50  0001 C CNN
-F 3 "" H 8200 2800 50  0000 C CNN
-	1    8200 2800
-	0    1    1    0   
-$EndComp
+	6450 2450 6450 3150
 Wire Wire Line
 	5750 3350 5850 3350
 Wire Wire Line
@@ -296,21 +132,9 @@ Wire Wire Line
 Wire Wire Line
 	6200 3350 6200 3150
 Wire Wire Line
-	7900 3050 7900 3350
+	7900 2350 7900 3350
 Wire Wire Line
 	7900 3350 7600 3350
-Wire Wire Line
-	8200 3050 8200 3450
-Wire Wire Line
-	8200 3450 7600 3450
-Connection ~ 8200 2250
-Connection ~ 6450 2450
-Wire Wire Line
-	6300 2450 6450 2450
-Wire Wire Line
-	7900 2350 6300 2350
-Wire Wire Line
-	8200 2250 6300 2250
 $Comp
 L CONN_XT60 P1
 U 1 1 5820B578
@@ -349,4 +173,31 @@ Text HLabel 2150 1600 2    60   Output ~ 0
 out+
 Wire Wire Line
 	2150 1600 1850 1600
+Text HLabel 5550 2250 0    60   Input ~ 0
+GND
+Wire Wire Line
+	5550 2250 5800 2250
+Wire Wire Line
+	5600 2450 5800 2450
+Wire Wire Line
+	6450 2450 6300 2450
+Wire Wire Line
+	7900 2350 6300 2350
+Wire Wire Line
+	4350 1950 6600 1950
+Wire Wire Line
+	6600 1950 6600 2250
+Wire Wire Line
+	6600 2250 6300 2250
+$Sheet
+S 6300 3300 1300 1200
+U 581FE98D
+F0 "kill_sw" 60
+F1 "kill_sw.sch" 60
+F2 "in+" I L 6300 3700 60 
+F3 "enabled2_3.3v" O R 7600 3350 60 
+F4 "enable" I L 6300 3350 60 
+F5 "GND" I L 6300 4450 60 
+F6 "out+" O R 7600 3700 60 
+$EndSheet
 $EndSCHEMATC
