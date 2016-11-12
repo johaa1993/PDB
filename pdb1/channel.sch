@@ -69,10 +69,6 @@ F4 "enabled2_3.3v" O R 5750 3350 60
 F5 "GND" I L 4650 4450 60 
 F6 "out+" O R 5750 3700 60 
 $EndSheet
-Wire Wire Line
-	3950 3700 4650 3700
-Wire Wire Line
-	5750 3700 6300 3700
 $Comp
 L CONN_02X03 P3
 U 1 1 581FE983
@@ -84,6 +80,59 @@ F 3 "" H 6050 1150 50  0000 C CNN
 	1    6050 2350
 	1    0    0    -1  
 $EndComp
+Text HLabel 2800 3700 0    60   Input ~ 0
+in+
+Text HLabel 8550 3700 2    60   Output ~ 0
+out+
+Text HLabel 2550 4800 0    60   Input ~ 0
+GND
+$Comp
+L CONN_XT60 P1
+U 1 1 5820B578
+P 1350 2850
+F 0 "P1" H 1350 3000 60  0000 C CNN
+F 1 "CONN_XT60" H 1350 2700 60  0000 C CNN
+F 2 "KiCad-Dev:XT60" H 1250 3000 60  0001 C CNN
+F 3 "" H 1250 3000 60  0001 C CNN
+	1    1350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_XT60 P2
+U 1 1 5820B780
+P 1350 3300
+F 0 "P2" H 1350 3450 60  0000 C CNN
+F 1 "CONN_XT60" H 1350 3150 60  0000 C CNN
+F 2 "KiCad-Dev:XT60" H 1250 3450 60  0001 C CNN
+F 3 "" H 1250 3450 60  0001 C CNN
+	1    1350 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 3250 2    60   Input ~ 0
+GND
+Text HLabel 1950 2800 2    60   Input ~ 0
+GND
+Text HLabel 1950 3350 2    60   Input ~ 0
+in+
+Text HLabel 1950 2900 2    60   Output ~ 0
+out+
+Text HLabel 5550 2250 0    60   Input ~ 0
+GND
+$Sheet
+S 6300 3300 1300 1200
+U 581FE98D
+F0 "kill_sw" 60
+F1 "kill_sw.sch" 60
+F2 "in+" I L 6300 3700 60 
+F3 "enabled2_3.3v" O R 7600 3350 60 
+F4 "enable" I L 6300 3350 60 
+F5 "GND" I L 6300 4450 60 
+F6 "out+" O R 7600 3700 60 
+$EndSheet
+Wire Wire Line
+	3950 3700 4650 3700
+Wire Wire Line
+	5750 3700 6300 3700
 Wire Wire Line
 	3050 4450 3050 4800
 Wire Wire Line
@@ -97,30 +146,16 @@ Wire Wire Line
 Connection ~ 3050 4800
 Wire Wire Line
 	4350 3350 3950 3350
-Text HLabel 2800 3700 0    60   Input ~ 0
-in+
-Text HLabel 8550 3700 2    60   Output ~ 0
-out+
 Wire Wire Line
 	8550 3700 7600 3700
 Wire Wire Line
 	3300 3700 2800 3700
-Text HLabel 2550 4800 0    60   Input ~ 0
-GND
-Wire Wire Line
-	6450 3150 6200 3150
 Wire Wire Line
 	4350 1950 4350 3350
 Wire Wire Line
-	5600 3150 5850 3150
+	5850 3350 5750 3350
 Wire Wire Line
-	5600 2450 5600 3150
-Wire Wire Line
-	6450 2450 6450 3150
-Wire Wire Line
-	5750 3350 5850 3350
-Wire Wire Line
-	5850 3350 5850 3150
+	5850 2800 5850 3350
 Wire Wire Line
 	3050 4450 3300 4450
 Wire Wire Line
@@ -128,76 +163,112 @@ Wire Wire Line
 Wire Wire Line
 	6000 4450 6000 4800
 Wire Wire Line
-	6300 3350 6200 3350
+	6200 3350 6300 3350
 Wire Wire Line
-	6200 3350 6200 3150
+	6200 2900 6200 3350
 Wire Wire Line
-	7900 2350 7900 3350
+	7900 2600 7900 3350
 Wire Wire Line
 	7900 3350 7600 3350
-$Comp
-L CONN_XT60 P1
-U 1 1 5820B578
-P 1550 1550
-F 0 "P1" H 1550 1700 60  0000 C CNN
-F 1 "CONN_XT60" H 1550 1400 60  0000 C CNN
-F 2 "KiCad-Dev:XT60" H 1450 1700 60  0001 C CNN
-F 3 "" H 1450 1700 60  0001 C CNN
-	1    1550 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_XT60 P2
-U 1 1 5820B780
-P 1550 2000
-F 0 "P2" H 1550 2150 60  0000 C CNN
-F 1 "CONN_XT60" H 1550 1850 60  0000 C CNN
-F 2 "KiCad-Dev:XT60" H 1450 2150 60  0001 C CNN
-F 3 "" H 1450 2150 60  0001 C CNN
-	1    1550 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1850 1950 2150 1950
+	1650 3250 1950 3250
 Wire Wire Line
-	1850 1500 2150 1500
-Text HLabel 2150 1950 2    60   Input ~ 0
-GND
-Text HLabel 2150 1500 2    60   Input ~ 0
-GND
-Text HLabel 2150 2050 2    60   Input ~ 0
-in+
+	1650 2800 1950 2800
 Wire Wire Line
-	2150 2050 1850 2050
-Text HLabel 2150 1600 2    60   Output ~ 0
-out+
+	1950 3350 1650 3350
 Wire Wire Line
-	2150 1600 1850 1600
-Text HLabel 5550 2250 0    60   Input ~ 0
-GND
+	1950 2900 1650 2900
 Wire Wire Line
 	5550 2250 5800 2250
-Wire Wire Line
-	5600 2450 5800 2450
-Wire Wire Line
-	6450 2450 6300 2450
-Wire Wire Line
-	7900 2350 6300 2350
 Wire Wire Line
 	4350 1950 6600 1950
 Wire Wire Line
 	6600 1950 6600 2250
 Wire Wire Line
 	6600 2250 6300 2250
-$Sheet
-S 6300 3300 1300 1200
-U 581FE98D
-F0 "kill_sw" 60
-F1 "kill_sw.sch" 60
-F2 "in+" I L 6300 3700 60 
-F3 "enabled2_3.3v" O R 7600 3350 60 
-F4 "enable" I L 6300 3350 60 
-F5 "GND" I L 6300 4450 60 
-F6 "out+" O R 7600 3700 60 
-$EndSheet
+Wire Wire Line
+	5750 3450 5950 3450
+Wire Wire Line
+	5950 3450 5950 3050
+Wire Wire Line
+	5850 2800 6400 2800
+Wire Wire Line
+	6400 2800 6400 2450
+Wire Wire Line
+	6400 2450 6300 2450
+Wire Wire Line
+	6200 2900 5600 2900
+Wire Wire Line
+	5600 2900 5600 2450
+Wire Wire Line
+	5600 2450 5800 2450
+Wire Wire Line
+	5950 3050 6550 3050
+Wire Wire Line
+	6550 3050 6550 2350
+Wire Wire Line
+	6550 2350 6300 2350
+Wire Wire Line
+	7900 2600 5700 2600
+Wire Wire Line
+	5700 2600 5700 2350
+Wire Wire Line
+	5700 2350 5800 2350
+$Comp
+L CONN_XT60 P?
+U 1 1 5827545B
+P 1350 2300
+F 0 "P?" H 1350 2450 60  0000 C CNN
+F 1 "CONN_XT60" H 1350 2150 60  0000 C CNN
+F 2 "KiCad-Dev:XT60" H 1250 2450 60  0001 C CNN
+F 3 "" H 1250 2450 60  0001 C CNN
+	1    1350 2300
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 2250 2    60   Input ~ 0
+GND
+Text HLabel 1950 2350 2    60   Output ~ 0
+out+
+Wire Wire Line
+	1650 2250 1950 2250
+Wire Wire Line
+	1950 2350 1650 2350
+$Comp
+L CONN_XT60 P?
+U 1 1 58275597
+P 1350 1750
+F 0 "P?" H 1350 1900 60  0000 C CNN
+F 1 "CONN_XT60" H 1350 1600 60  0000 C CNN
+F 2 "KiCad-Dev:XT60" H 1250 1900 60  0001 C CNN
+F 3 "" H 1250 1900 60  0001 C CNN
+	1    1350 1750
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 1700 2    60   Input ~ 0
+GND
+Text HLabel 1950 1800 2    60   Output ~ 0
+out+
+Wire Wire Line
+	1650 1700 1950 1700
+Wire Wire Line
+	1950 1800 1650 1800
+$Comp
+L CONN_XT60 P?
+U 1 1 582755A1
+P 1350 1200
+F 0 "P?" H 1350 1350 60  0000 C CNN
+F 1 "CONN_XT60" H 1350 1050 60  0000 C CNN
+F 2 "KiCad-Dev:XT60" H 1250 1350 60  0001 C CNN
+F 3 "" H 1250 1350 60  0001 C CNN
+	1    1350 1200
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 1150 2    60   Input ~ 0
+GND
+Text HLabel 1950 1250 2    60   Output ~ 0
+out+
+Wire Wire Line
+	1650 1150 1950 1150
+Wire Wire Line
+	1950 1250 1650 1250
 $EndSCHEMATC
