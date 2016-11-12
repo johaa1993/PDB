@@ -1,0 +1,261 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dev_conn
+LIBS:dev_ic
+LIBS:dev_mosfet
+LIBS:main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X03 P6
+U 1 1 58272423
+P 7450 3550
+F 0 "P6" H 7450 3750 50  0000 C CNN
+F 1 "CONN_02X03" H 7450 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7450 2350 50  0001 C CNN
+F 3 "" H 7450 2350 50  0000 C CNN
+	1    7450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P3
+U 1 1 5827246A
+P 7450 1850
+F 0 "P3" H 7450 2050 50  0000 C CNN
+F 1 "CONN_02X03" H 7450 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7450 650 50  0001 C CNN
+F 3 "" H 7450 650 50  0000 C CNN
+	1    7450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P4
+U 1 1 582724EF
+P 7450 2400
+F 0 "P4" H 7450 2600 50  0000 C CNN
+F 1 "CONN_02X03" H 7450 2200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7450 1200 50  0001 C CNN
+F 3 "" H 7450 1200 50  0000 C CNN
+	1    7450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P5
+U 1 1 58272513
+P 7450 3000
+F 0 "P5" H 7450 3200 50  0000 C CNN
+F 1 "CONN_02X03" H 7450 2800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7450 1800 50  0001 C CNN
+F 3 "" H 7450 1800 50  0000 C CNN
+	1    7450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM3480-3.3 U1
+U 1 1 58272571
+P 4200 2250
+F 0 "U1" H 3900 2400 50  0000 L CNN
+F 1 "LM3480-3.3" H 4500 2400 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4200 1850 50  0001 C CIN
+F 3 "" H 4200 2250 50  0000 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_XT60 P1
+U 1 1 58272686
+P 2450 2300
+F 0 "P1" H 2450 2450 60  0000 C CNN
+F 1 "CONN_XT60" H 2450 2150 60  0000 C CNN
+F 2 "KiCad-Dev:XT60" H 2350 2450 60  0001 C CNN
+F 3 "" H 2350 2450 60  0001 C CNN
+	1    2450 2300
+	1    0    0    1   
+$EndComp
+Text HLabel 2500 1800 0    60   Input ~ 0
+In+
+Wire Wire Line
+	2750 2250 3000 2250
+Wire Wire Line
+	3000 2250 3000 1800
+Wire Wire Line
+	2500 1800 5250 1800
+Text HLabel 2500 3150 0    60   Input ~ 0
+GND
+Wire Wire Line
+	2500 3150 5250 3150
+Wire Wire Line
+	3000 3150 3000 2350
+Wire Wire Line
+	3000 2350 2750 2350
+Wire Wire Line
+	3550 1800 3550 2250
+Wire Wire Line
+	3550 2250 3700 2250
+Connection ~ 3000 1800
+Connection ~ 3550 1800
+Wire Wire Line
+	4200 3150 4200 2550
+Connection ~ 3000 3150
+$Comp
+L +3.3V #PWR01
+U 1 1 582729C3
+P 4950 2150
+F 0 "#PWR01" H 4950 2000 50  0001 C CNN
+F 1 "+3.3V" H 4950 2290 50  0000 C CNN
+F 2 "" H 4950 2150 50  0000 C CNN
+F 3 "" H 4950 2150 50  0000 C CNN
+	1    4950 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2250 4950 2150
+Text HLabel 6900 1750 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6900 1750 7200 1750
+Text HLabel 6900 2300 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6900 2300 7200 2300
+Text HLabel 6900 2900 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6900 2900 7200 2900
+Text HLabel 6900 3450 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6900 3450 7200 3450
+Wire Wire Line
+	7850 2500 7700 2500
+Wire Wire Line
+	7850 1950 7700 1950
+Wire Wire Line
+	7850 3100 7700 3100
+Wire Wire Line
+	7850 3650 7700 3650
+Wire Wire Line
+	6250 3650 7200 3650
+Wire Wire Line
+	6250 1950 6250 3650
+Wire Wire Line
+	6250 1950 7200 1950
+Wire Wire Line
+	7200 2500 6250 2500
+Connection ~ 6250 2500
+Wire Wire Line
+	7200 3100 6250 3100
+Connection ~ 6250 3100
+$Comp
+L CONN_01X02 P2
+U 1 1 582727FA
+P 5750 2250
+F 0 "P2" H 5750 2400 50  0000 C CNN
+F 1 "CONN_01X02" V 5850 2250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5750 2250 50  0001 C CNN
+F 3 "" H 5750 2250 50  0000 C CNN
+	1    5750 2250
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5700 2450 5700 2650
+Wire Wire Line
+	5800 2450 5800 2650
+Wire Wire Line
+	7850 1950 7850 3650
+Connection ~ 7850 3100
+Connection ~ 7850 2500
+$Comp
+L +3.3V #PWR02
+U 1 1 58272A47
+P 8200 2200
+F 0 "#PWR02" H 8200 2050 50  0001 C CNN
+F 1 "+3.3V" H 8200 2340 50  0000 C CNN
+F 2 "" H 8200 2200 50  0000 C CNN
+F 3 "" H 8200 2200 50  0000 C CNN
+	1    8200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2200 8200 2350
+Wire Wire Line
+	8200 2350 7850 2350
+Connection ~ 7850 2350
+Wire Wire Line
+	4950 2250 4700 2250
+$Comp
+L NSI45020AT1G U2
+U 1 1 58272BFC
+P 5250 2250
+F 0 "U2" H 5250 2100 60  0000 C CNN
+F 1 "NSI45020AT1G" H 5250 2400 60  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 4500 2400 60  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NSI45020A-D.PDF" H 5350 1900 60  0001 C CNN
+	1    5250 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 58272C3F
+P 5250 2900
+F 0 "D1" H 5250 3000 50  0000 C CNN
+F 1 "3.3v" H 5250 2800 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5250 2900 50  0001 C CNN
+F 3 "" H 5250 2900 50  0000 C CNN
+	1    5250 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 2550 5250 2700
+Wire Wire Line
+	5700 2650 5250 2650
+Connection ~ 5250 2650
+Wire Wire Line
+	5800 2650 6250 2650
+Connection ~ 6250 2650
+Wire Wire Line
+	5250 1800 5250 1950
+Wire Wire Line
+	5250 3150 5250 3100
+Connection ~ 4200 3150
+$EndSCHEMATC
