@@ -965,7 +965,7 @@
   )
 
   (gr_line (start 63.5 68.58) (end 205.74 68.58) (layer F.SilkS) (width 0.2))
-  (gr_text "Controll B" (at 135.89 67.31) (layer F.SilkS) (tstamp 58276197)
+  (gr_text "Controll C" (at 135.89 67.31) (layer F.SilkS) (tstamp 58276197)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "Controll B" (at 125.73 67.31) (layer F.SilkS) (tstamp 58276194)
