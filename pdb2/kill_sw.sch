@@ -114,7 +114,7 @@ U 1 1 5825B68F
 P 5150 3500
 F 0 "C3" H 5175 3600 50  0000 L CNN
 F 1 "CP" H 5175 3400 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 5188 3350 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_D5_L11_P18" H 5188 3350 50  0001 C CNN
 F 3 "" H 5150 3500 50  0000 C CNN
 	1    5150 3500
 	0    -1   -1   0   
@@ -280,4 +280,21 @@ Connection ~ 1900 4750
 Wire Wire Line
 	2150 4550 2150 4750
 Connection ~ 2150 4750
+$Comp
+L R R5
+U 1 1 582F017F
+P 3150 4400
+F 0 "R5" V 3230 4400 50  0000 C CNN
+F 1 "R" V 3150 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3080 4400 50  0001 C CNN
+F 3 "" H 3150 4400 50  0000 C CNN
+	1    3150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4550 3150 4750
+Connection ~ 3150 4750
+Wire Wire Line
+	3150 4250 3150 4050
+Connection ~ 3150 4050
 $EndSCHEMATC

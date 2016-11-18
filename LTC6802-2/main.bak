@@ -33,6 +33,7 @@ LIBS:dev_ic
 LIBS:dev_mosfet
 LIBS:dev_switch
 LIBS:ltc6802
+LIBS:main-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -81,22 +82,16 @@ F 3 "" H 6700 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 2900 6700 2900
+	5450 2900 7300 2900
 Wire Wire Line
-	6700 2900 7300 2900
-Wire Wire Line
-	5450 2800 6350 2800
-Wire Wire Line
-	6350 2800 7300 2800
+	5450 2800 7300 2800
 Wire Wire Line
 	6350 3050 6350 2800
 Connection ~ 6350 2800
 Wire Wire Line
 	6350 3350 6350 3450
 Wire Wire Line
-	6350 3450 6700 3450
-Wire Wire Line
-	6700 3450 7100 3450
+	6350 3450 7100 3450
 Wire Wire Line
 	6700 3450 6700 3350
 $Comp
@@ -160,9 +155,7 @@ $EndComp
 Wire Wire Line
 	6100 2300 6100 2250
 Wire Wire Line
-	5450 1850 6100 1850
-Wire Wire Line
-	6100 1850 6350 1850
+	5450 1850 6350 1850
 Wire Wire Line
 	6100 1950 6100 1850
 Connection ~ 6100 1850
@@ -382,29 +375,7 @@ C2
 Text Label 3550 4150 0    60   ~ 0
 C1
 Wire Bus Line
-	3450 1550 3450 1850
-Wire Bus Line
-	3450 1850 3450 2050
-Wire Bus Line
-	3450 2050 3450 2250
-Wire Bus Line
-	3450 2250 3450 2450
-Wire Bus Line
-	3450 2450 3450 2650
-Wire Bus Line
-	3450 2650 3450 2850
-Wire Bus Line
-	3450 2850 3450 3050
-Wire Bus Line
-	3450 3050 3450 3250
-Wire Bus Line
-	3450 3250 3450 3450
-Wire Bus Line
-	3450 3450 3450 3650
-Wire Bus Line
-	3450 3650 3450 3850
-Wire Bus Line
-	3450 3850 3450 4050
+	3450 1550 3450 4050
 Wire Wire Line
 	2450 2400 2750 2400
 Entry Wire Line
@@ -502,29 +473,7 @@ $EndComp
 Wire Wire Line
 	2650 3600 2750 3600
 Wire Bus Line
-	2350 1550 2350 2300
-Wire Bus Line
-	2350 2300 2350 2400
-Wire Bus Line
-	2350 2400 2350 2500
-Wire Bus Line
-	2350 2500 2350 2600
-Wire Bus Line
-	2350 2600 2350 2700
-Wire Bus Line
-	2350 2700 2350 2800
-Wire Bus Line
-	2350 2800 2350 2900
-Wire Bus Line
-	2350 2900 2350 3000
-Wire Bus Line
-	2350 3000 2350 3100
-Wire Bus Line
-	2350 3100 2350 3200
-Wire Bus Line
-	2350 3200 2350 3300
-Wire Bus Line
-	2350 3300 2350 3400
+	2350 1550 2350 3400
 Wire Bus Line
 	1450 1550 3450 1550
 $Comp
@@ -624,35 +573,13 @@ $EndComp
 Wire Wire Line
 	1750 3550 1850 3550
 Wire Bus Line
-	1450 1550 1450 2250
-Wire Bus Line
-	1450 2250 1450 2350
-Wire Bus Line
-	1450 2350 1450 2450
-Wire Bus Line
-	1450 2450 1450 2550
-Wire Bus Line
-	1450 2550 1450 2650
-Wire Bus Line
-	1450 2650 1450 2750
-Wire Bus Line
-	1450 2750 1450 2850
-Wire Bus Line
-	1450 2850 1450 2950
-Wire Bus Line
-	1450 2950 1450 3050
-Wire Bus Line
-	1450 3050 1450 3150
-Wire Bus Line
-	1450 3150 1450 3250
-Wire Bus Line
-	1450 3250 1450 3350
+	1450 1550 1450 3350
 Text Label 5600 2700 0    60   ~ 0
 CSBI
 Text Label 5600 2800 0    60   ~ 0
 SDO
 Text Label 5600 2900 0    60   ~ 0
-CSBI
+SDI
 Text Label 5600 3000 0    60   ~ 0
 SCKI
 Text Label 5500 4100 0    60   ~ 0
@@ -660,8 +587,10 @@ GPIO2
 Text Label 5500 4200 0    60   ~ 0
 GPIO1
 Wire Wire Line
-	4700 5300 4700 5950
-Wire Wire Line
-	4700 5050 4700 5300
+	4700 5050 4700 5950
 Connection ~ 4750 5000
+Text Label 4500 5250 1    60   ~ 0
+Vtemp1
+Text Label 4600 5250 1    60   ~ 0
+Vtemp2
 $EndSCHEMATC

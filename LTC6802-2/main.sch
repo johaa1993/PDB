@@ -33,6 +33,7 @@ LIBS:dev_ic
 LIBS:dev_mosfet
 LIBS:dev_switch
 LIBS:ltc6802
+LIBS:main-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -652,7 +653,7 @@ CSBI
 Text Label 5600 2800 0    60   ~ 0
 SDO
 Text Label 5600 2900 0    60   ~ 0
-CSBI
+SDI
 Text Label 5600 3000 0    60   ~ 0
 SCKI
 Text Label 5500 4100 0    60   ~ 0
@@ -660,9 +661,7 @@ GPIO2
 Text Label 5500 4200 0    60   ~ 0
 GPIO1
 Wire Wire Line
-	4700 5300 4700 5950
-Wire Wire Line
-	4700 5050 4700 5300
+	4700 5050 4700 5950
 Connection ~ 4750 5000
 Text Label 4500 5250 1    60   ~ 0
 Vtemp1
