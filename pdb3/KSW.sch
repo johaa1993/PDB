@@ -114,7 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 3150 4500 3550
 Wire Wire Line
-	3500 3750 4200 3750
+	4150 3750 4200 3750
 Wire Wire Line
 	4500 4300 4500 3950
 Wire Wire Line
@@ -198,22 +198,19 @@ Connection ~ 1900 3800
 $Comp
 L R R_pulldown3
 U 1 1 582E0E52
-P 3800 4050
+P 3750 4050
 AR Path="/582DFA3C/582E0E52" Ref="R_pulldown3"  Part="1" 
 AR Path="/58310643/582E0E52" Ref="R_pulldown6"  Part="1" 
-F 0 "R_pulldown3" V 3880 4050 50  0000 C CNN
-F 1 "5k" V 3800 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3730 4050 50  0001 C CNN
-F 3 "" H 3800 4050 50  0000 C CNN
-	1    3800 4050
+F 0 "R_pulldown3" V 3830 4050 50  0000 C CNN
+F 1 "5k" V 3750 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3680 4050 50  0001 C CNN
+F 3 "" H 3750 4050 50  0000 C CNN
+	1    3750 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 3900 3800 3750
-Connection ~ 3800 3750
-Wire Wire Line
-	3800 4200 3800 4300
-Connection ~ 3800 4300
+	3750 4200 3750 4300
+Connection ~ 3750 4300
 $Comp
 L D_Small D1
 U 1 1 582E1347
@@ -236,7 +233,7 @@ AUIPS7111S_IN
 Text Notes 6050 2850 0    60   ~ 0
 VCC operating range 8 .. 50 V
 Text HLabel 3050 3200 1    60   Input ~ 0
-3.3V
+Logic+
 $Comp
 L CONN_XT60_Female P6
 U 1 1 5830B4CE
@@ -267,15 +264,13 @@ AR Path="/582DFA3C/5830EB20" Ref="P4"  Part="1"
 AR Path="/58310643/5830EB20" Ref="P7"  Part="1" 
 F 0 "P4" H 850 3550 50  0000 C CNN
 F 1 "CONN_01X03" V 950 3350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 850 3350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 850 3350 50  0001 C CNN
 F 3 "" H 850 3350 50  0000 C CNN
 	1    850  3350
 	-1   0    0    1   
 $EndComp
 Text HLabel 1050 3450 2    60   Input ~ 0
 EnableA
-Text HLabel 1050 3250 2    60   Input ~ 0
-3.3V
 $Comp
 L CONN_01X03 P5
 U 1 1 5830ED10
@@ -284,15 +279,13 @@ AR Path="/582DFA3C/5830ED10" Ref="P5"  Part="1"
 AR Path="/58310643/5830ED10" Ref="P8"  Part="1" 
 F 0 "P5" H 850 4100 50  0000 C CNN
 F 1 "CONN_01X03" V 950 3900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 850 3900 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 850 3900 50  0001 C CNN
 F 3 "" H 850 3900 50  0000 C CNN
 	1    850  3900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1550 3700 2700 3700
-Text HLabel 1050 3800 2    60   Input ~ 0
-3.3V
 Text HLabel 1050 4000 2    60   Input ~ 0
 EnableB
 Wire Wire Line
@@ -313,4 +306,26 @@ Wire Wire Line
 	7000 3250 7750 3250
 Text Label 7000 3250 0    60   ~ 0
 Out
+$Comp
+L R R3
+U 1 1 58312B1C
+P 4000 3750
+AR Path="/582DFA3C/58312B1C" Ref="R3"  Part="1" 
+AR Path="/58310643/58312B1C" Ref="R4"  Part="1" 
+F 0 "R3" V 4080 3750 50  0000 C CNN
+F 1 "5k" V 4000 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3930 3750 50  0001 C CNN
+F 3 "" H 4000 3750 50  0000 C CNN
+	1    4000 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 3750 3850 3750
+Text HLabel 1050 3250 2    60   Input ~ 0
+Logic+
+Text HLabel 1050 3800 2    60   Input ~ 0
+Logic+
+Wire Wire Line
+	3750 3900 3750 3750
+Connection ~ 3750 3750
 $EndSCHEMATC

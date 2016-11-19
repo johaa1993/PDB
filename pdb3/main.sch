@@ -58,9 +58,9 @@ F1 "KSW.sch" 60
 F2 "GND" U L 6300 2550 60 
 F3 "Current_feedback" O R 7600 2450 60 
 F4 "VCC" I L 6300 2150 60 
-F5 "3.3V" I L 6300 2250 60 
-F6 "EnableA" I L 6300 2350 60 
-F7 "EnableB" I L 6300 2450 60 
+F5 "EnableA" I L 6300 2350 60 
+F6 "EnableB" I L 6300 2450 60 
+F7 "Logic+" I L 6300 2250 60 
 $EndSheet
 $Comp
 L WPMDH1100501S U2
@@ -119,8 +119,6 @@ Wire Wire Line
 Text Label 2600 3300 0    60   ~ 0
 Arduino_5V
 Text Label 2600 4300 0    60   ~ 0
-Arduino_3.3V
-Text Label 6300 2250 2    60   ~ 0
 Arduino_3.3V
 Wire Wire Line
 	4950 2250 6300 2250
@@ -273,8 +271,6 @@ Text GLabel 5600 2450 0    60   Input ~ 0
 Reed
 Wire Wire Line
 	7600 2450 7850 2450
-Text Label 6300 3100 2    60   ~ 0
-Arduino_3.3V
 Wire Wire Line
 	4950 3100 6300 3100
 $Comp
@@ -318,19 +314,19 @@ F1 "KSW.sch" 60
 F2 "GND" U L 6300 3400 60 
 F3 "Current_feedback" O R 7600 3300 60 
 F4 "VCC" I L 6300 3000 60 
-F5 "3.3V" I L 6300 3100 60 
-F6 "EnableA" I L 6300 3200 60 
-F7 "EnableB" I L 6300 3300 60 
+F5 "EnableA" I L 6300 3200 60 
+F6 "EnableB" I L 6300 3300 60 
+F7 "Logic+" I L 6300 3100 60 
 $EndSheet
 Text GLabel 6200 4250 0    60   Input ~ 0
 Reed
 $Comp
-L CONN_01X02 P?
+L CONN_01X02 P10
 U 1 1 58311BEB
 P 7000 4300
-F 0 "P?" H 7000 4450 50  0000 C CNN
+F 0 "P10" H 7000 4450 50  0000 C CNN
 F 1 "CONN_01X02_Reed" V 7100 4300 50  0000 C CNN
-F 2 "" H 7000 4300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7000 4300 50  0001 C CNN
 F 3 "" H 7000 4300 50  0000 C CNN
 	1    7000 4300
 	1    0    0    -1  
@@ -341,4 +337,8 @@ Text Label 6800 4350 2    60   ~ 0
 Arduino_3.3V
 Wire Wire Line
 	6800 4350 6500 4350
+Text Label 6300 3100 2    60   ~ 0
+Arduino_3.3V
+Text Label 6300 2250 2    60   ~ 0
+Arduino_3.3V
 $EndSCHEMATC
