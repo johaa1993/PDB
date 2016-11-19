@@ -1,4 +1,4 @@
-update=tor 17 nov 2016 17:58:17
+update=2016-11-19 13:10:33
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../KiCad-Dev.pretty
+LibDir=../../KiCad-Dev.pretty;../../we.pretty;../../arduino.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -63,3 +63,5 @@ LibName31=dev_switch
 LibName32=dev_mosfet
 LibName33=dev_ic
 LibName34=dev_conn
+LibName35=step_down_converter
+LibName36=arduino_micro_shield
