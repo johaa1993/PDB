@@ -1,0 +1,324 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dev_conn
+LIBS:dev_ic
+LIBS:dev_mosfet
+LIBS:dev_switch
+LIBS:ltc6802
+LIBS:pdb1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MIC5014 U3
+U 1 1 581F4598
+P 7200 4150
+AR Path="/581FE101/581FE98D/581F4598" Ref="U3"  Part="1" 
+AR Path="/58326689/581FE98D/581F4598" Ref="U8"  Part="1" 
+F 0 "U3" H 7200 3900 60  0000 C CNN
+F 1 "MIC5014" H 7200 4400 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7200 4050 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/29565.pdf" H 7200 3800 60  0001 C CNN
+	1    7200 4150
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 2100 0    60   Input ~ 0
+in+
+Text HLabel 3600 4800 0    60   Input ~ 0
+GND
+Text HLabel 8900 2100 2    60   Output ~ 0
+out+
+$Comp
+L NSI45020AT1G U4
+U 1 1 581F58D3
+P 8450 2500
+AR Path="/581FE101/581FE98D/581F58D3" Ref="U4"  Part="1" 
+AR Path="/58326689/581FE98D/581F58D3" Ref="U9"  Part="1" 
+F 0 "U4" H 8450 2350 60  0000 C CNN
+F 1 "NSI45020AT1G" H 8450 2650 60  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 7700 2650 60  0001 C CNN
+F 3 "" H 7700 2650 60  0001 C CNN
+	1    8450 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 581F591A
+P 8450 4200
+AR Path="/581FE101/581FE98D/581F591A" Ref="D2"  Part="1" 
+AR Path="/58326689/581FE98D/581F591A" Ref="D4"  Part="1" 
+F 0 "D2" H 8450 4300 50  0000 C CNN
+F 1 "LED" H 8450 4100 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 8450 4200 50  0001 C CNN
+F 3 "" H 8450 4200 50  0000 C CNN
+	1    8450 4200
+	0    -1   -1   0   
+$EndComp
+Text HLabel 9050 3650 2    60   Output ~ 0
+Enabled_3.3V
+Text HLabel 7450 3550 2    60   Input ~ 0
+GND
+$Comp
+L BUK9Y4R8-60E Q1
+U 1 1 58248FB0
+P 7750 2200
+AR Path="/581FE101/581FE98D/58248FB0" Ref="Q1"  Part="1" 
+AR Path="/58326689/581FE98D/58248FB0" Ref="Q2"  Part="1" 
+F 0 "Q1" H 8100 2300 50  0000 L CNN
+F 1 "BUK9Y4R8-60E" H 8100 2200 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-669_LFPAK" H 8100 2125 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/2053583.pdf?_ga=1.217785489.606791601.1474638083" H 6000 1650 50  0001 L CNN
+	1    7750 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C1
+U 1 1 5825B68F
+P 7100 3550
+AR Path="/581FE101/581FE98D/5825B68F" Ref="C1"  Part="1" 
+AR Path="/58326689/581FE98D/5825B68F" Ref="C4"  Part="1" 
+F 0 "C1" H 7125 3650 50  0000 L CNN
+F 1 "CP" H 7125 3450 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_8x10" H 7138 3400 50  0001 C CNN
+F 3 "" H 7100 3550 50  0000 C CNN
+	1    7100 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74LVC1G08 U2
+U 1 1 582ACE25
+P 4550 4100
+AR Path="/581FE101/581FE98D/582ACE25" Ref="U2"  Part="1" 
+AR Path="/58326689/581FE98D/582ACE25" Ref="U7"  Part="1" 
+F 0 "U2" H 4650 3850 60  0000 C CNN
+F 1 "74LVC1G08" H 4850 4350 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-353" H 4500 4150 60  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74LVC1G08.pdf?" H 5050 3650 60  0001 C CNN
+	1    4550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2100 6650 4000
+Wire Wire Line
+	3600 2100 7550 2100
+Connection ~ 6650 2100
+Wire Wire Line
+	7800 2400 7800 4300
+Wire Wire Line
+	7800 4300 7650 4300
+Wire Wire Line
+	6550 4800 6550 4300
+Wire Wire Line
+	6550 4300 6750 4300
+Connection ~ 6550 4800
+Wire Wire Line
+	7950 2100 8900 2100
+Wire Wire Line
+	6750 4200 6650 4200
+Wire Wire Line
+	8000 4700 6650 4700
+Connection ~ 8000 2100
+Connection ~ 6650 3550
+Wire Wire Line
+	8450 2200 8450 2100
+Connection ~ 8450 2100
+Wire Wire Line
+	8450 4800 8450 4400
+Wire Wire Line
+	8450 2800 8450 4000
+Wire Wire Line
+	6650 3550 6950 3550
+Wire Wire Line
+	7250 3550 7450 3550
+Wire Wire Line
+	3600 4800 8450 4800
+Wire Wire Line
+	7950 1950 8000 1950
+Connection ~ 8000 1950
+Wire Wire Line
+	7950 1800 8000 1800
+Connection ~ 8000 1800
+Wire Wire Line
+	8000 1800 8000 4700
+Wire Wire Line
+	6650 4700 6650 4200
+Wire Wire Line
+	5000 4100 6750 4100
+Wire Wire Line
+	4550 4500 4550 4800
+Connection ~ 4550 4800
+Wire Wire Line
+	6650 4000 6750 4000
+Wire Wire Line
+	3050 4050 4200 4050
+Wire Wire Line
+	3050 4150 4200 4150
+$Comp
+L R R2
+U 1 1 582B6025
+P 3850 4450
+AR Path="/581FE101/581FE98D/582B6025" Ref="R2"  Part="1" 
+AR Path="/58326689/581FE98D/582B6025" Ref="R9"  Part="1" 
+F 0 "R2" V 3930 4450 50  0000 C CNN
+F 1 "R" V 3850 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3780 4450 50  0001 C CNN
+F 3 "" H 3850 4450 50  0000 C CNN
+	1    3850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 582B608A
+P 4100 4450
+AR Path="/581FE101/581FE98D/582B608A" Ref="R3"  Part="1" 
+AR Path="/58326689/581FE98D/582B608A" Ref="R10"  Part="1" 
+F 0 "R3" V 4180 4450 50  0000 C CNN
+F 1 "R" V 4100 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4030 4450 50  0001 C CNN
+F 3 "" H 4100 4450 50  0000 C CNN
+	1    4100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4300 4100 4050
+Wire Wire Line
+	3850 4300 3850 4150
+Connection ~ 3850 4150
+Wire Wire Line
+	3850 4600 3850 4800
+Connection ~ 3850 4800
+Wire Wire Line
+	4100 4600 4100 4800
+Connection ~ 4100 4800
+$Comp
+L R R4
+U 1 1 582F017F
+P 5100 4450
+AR Path="/581FE101/581FE98D/582F017F" Ref="R4"  Part="1" 
+AR Path="/58326689/581FE98D/582F017F" Ref="R11"  Part="1" 
+F 0 "R4" V 5180 4450 50  0000 C CNN
+F 1 "R" V 5100 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5030 4450 50  0001 C CNN
+F 3 "" H 5100 4450 50  0000 C CNN
+	1    5100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4600 5100 4800
+Connection ~ 5100 4800
+Wire Wire Line
+	5100 4300 5100 4100
+Connection ~ 5100 4100
+Connection ~ 4100 4050
+Wire Wire Line
+	4550 3700 4550 3400
+Text HLabel 4550 3400 1    60   Input ~ 0
+3.3V
+$Comp
+L CONN_01X03 P5
+U 1 1 5831AD4D
+P 2150 3700
+AR Path="/581FE101/581FE98D/5831AD4D" Ref="P5"  Part="1" 
+AR Path="/58326689/581FE98D/5831AD4D" Ref="P8"  Part="1" 
+F 0 "P5" H 2150 3900 50  0000 C CNN
+F 1 "CONN_01X03" V 2250 3700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2150 3700 50  0001 C CNN
+F 3 "" H 2150 3700 50  0000 C CNN
+	1    2150 3700
+	-1   0    0    1   
+$EndComp
+Text HLabel 2450 3600 2    60   Input ~ 0
+Enable_A
+$Comp
+L CONN_01X03 P6
+U 1 1 5831ADD9
+P 2150 4450
+AR Path="/581FE101/581FE98D/5831ADD9" Ref="P6"  Part="1" 
+AR Path="/58326689/581FE98D/5831ADD9" Ref="P9"  Part="1" 
+F 0 "P6" H 2150 4650 50  0000 C CNN
+F 1 "CONN_01X03" V 2250 4450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2150 4450 50  0001 C CNN
+F 3 "" H 2150 4450 50  0000 C CNN
+	1    2150 4450
+	-1   0    0    1   
+$EndComp
+Text HLabel 2450 4350 2    60   Input ~ 0
+Enable_B
+Text HLabel 2450 3800 2    60   Input ~ 0
+3.3V
+Wire Wire Line
+	2450 3800 2350 3800
+Wire Wire Line
+	2450 3600 2350 3600
+Wire Wire Line
+	2450 4350 2350 4350
+Text HLabel 2450 4550 2    60   Input ~ 0
+3.3V
+Wire Wire Line
+	2450 4550 2350 4550
+Wire Wire Line
+	2350 3700 3050 3700
+Wire Wire Line
+	3050 3700 3050 4050
+Wire Wire Line
+	2350 4450 3050 4450
+Wire Wire Line
+	3050 4450 3050 4150
+$Comp
+L R R5
+U 1 1 5831D799
+P 8800 3650
+AR Path="/581FE101/581FE98D/5831D799" Ref="R5"  Part="1" 
+AR Path="/58326689/581FE98D/5831D799" Ref="R12"  Part="1" 
+F 0 "R5" V 8880 3650 50  0000 C CNN
+F 1 "R" V 8800 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8730 3650 50  0001 C CNN
+F 3 "" H 8800 3650 50  0000 C CNN
+	1    8800 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 3650 8450 3650
+Connection ~ 8450 3650
+Wire Wire Line
+	8950 3650 9050 3650
+$EndSCHEMATC
