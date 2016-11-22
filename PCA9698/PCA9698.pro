@@ -1,4 +1,4 @@
-update=2016-11-21 23:52:55
+update=tis 22 nov 2016 12:43:02
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../../KiCad-Dev.pretty;../../../we.pretty
+LibDir=../../KiCad-Dev.pretty;../../we.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -62,5 +62,4 @@ LibName30=dev_conn
 LibName31=dev_ic
 LibName32=dev_mosfet
 LibName33=dev_switch
-LibName34=ltc6802
-LibName35=step_down_converter
+LibName34=step_down_converter

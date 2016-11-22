@@ -1,0 +1,291 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dev_conn
+LIBS:dev_ic
+LIBS:dev_mosfet
+LIBS:dev_switch
+LIBS:step_down_converter
+LIBS:PCA9698-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PCA9698 U2
+U 1 1 58338EBE
+P 4000 5100
+F 0 "U2" H 4000 7500 60  0000 C CNN
+F 1 "PCA9698" H 4000 7400 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-56_6.1x14mm_Pitch0.5mm" H 4000 6750 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1090575.pdf" H 4050 7650 60  0001 C CNN
+	1    4000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L WPMDH1100501S U1
+U 1 1 58338EFF
+P 2250 1300
+F 0 "U1" H 2250 1450 60  0000 C CNN
+F 1 "WPMDH1100501S" H 2250 1550 60  0000 C CNN
+F 2 "we:WPMDH1100xx1S" H 2250 1750 60  0001 C CNN
+F 3 "http://katalog.we-online.com/pm/datasheet/173010342.pdf" H 2250 1650 60  0001 C CNN
+	1    2250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS7828 U3
+U 1 1 58340DA0
+P 1500 3250
+F 0 "U3" H 1500 3700 60  0000 C CNN
+F 1 "ADS7828" H 1500 3800 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 1800 2700 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads7828.pdf" H 1550 3950 60  0001 C CNN
+	1    1500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC6802-2 U4
+U 1 1 58340BF6
+P 9050 1400
+F 0 "U4" H 9050 2450 60  0000 C CNN
+F 1 "LTC6802-2" H 9050 2350 60  0000 C CNN
+F 2 "KiCad-Dev:SSOP-44" H 8900 1400 60  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 9050 2600 60  0001 C CNN
+	1    9050 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4000 1000 4000
+$Comp
+L SC18IS602B U5
+U 1 1 58341BB8
+P 1500 4350
+F 0 "U5" H 1500 4900 60  0000 C CNN
+F 1 "SC18IS602B" H 1500 5000 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 1500 4100 60  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/SC18IS602B.pdf" H 1500 5100 60  0001 C CNN
+	1    1500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3900 800  3900
+$Comp
+L +3.3V #PWR4
+U 1 1 5834258F
+P 2200 2900
+F 0 "#PWR4" H 2200 2750 50  0001 C CNN
+F 1 "+3.3V" H 2200 3040 50  0000 C CNN
+F 2 "" H 2200 2900 50  0000 C CNN
+F 3 "" H 2200 2900 50  0000 C CNN
+	1    2200 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 2900 2000 2900
+$Comp
+L GND #PWR3
+U 1 1 583425C5
+P 2050 3000
+F 0 "#PWR3" H 2050 2750 50  0001 C CNN
+F 1 "GND" H 2050 2850 50  0000 C CNN
+F 2 "" H 2050 3000 50  0000 C CNN
+F 3 "" H 2050 3000 50  0000 C CNN
+	1    2050 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 3000 2000 3000
+$Comp
+L GND #PWR2
+U 1 1 5834278F
+P 950 4000
+F 0 "#PWR2" H 950 3750 50  0001 C CNN
+F 1 "GND" H 950 3850 50  0000 C CNN
+F 2 "" H 950 4000 50  0000 C CNN
+F 3 "" H 950 4000 50  0000 C CNN
+	1    950  4000
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR1
+U 1 1 583427E0
+P 800 3900
+F 0 "#PWR1" H 800 3750 50  0001 C CNN
+F 1 "+3.3V" H 800 4040 50  0000 C CNN
+F 2 "" H 800 3900 50  0000 C CNN
+F 3 "" H 800 3900 50  0000 C CNN
+	1    800  3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR5
+U 1 1 58342A9A
+P 3100 2900
+F 0 "#PWR5" H 3100 2750 50  0001 C CNN
+F 1 "+3.3V" H 3100 3040 50  0000 C CNN
+F 2 "" H 3100 2900 50  0000 C CNN
+F 3 "" H 3100 2900 50  0000 C CNN
+	1    3100 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 2900 3200 2900
+Wire Wire Line
+	3150 2900 3150 3000
+Wire Wire Line
+	3150 3000 3200 3000
+Connection ~ 3150 2900
+$Comp
+L GND #PWR6
+U 1 1 58342B08
+P 3100 3400
+F 0 "#PWR6" H 3100 3150 50  0001 C CNN
+F 1 "GND" H 3100 3250 50  0000 C CNN
+F 2 "" H 3100 3400 50  0000 C CNN
+F 3 "" H 3100 3400 50  0000 C CNN
+	1    3100 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3400 3200 3400
+Wire Wire Line
+	3200 3500 3150 3500
+Wire Wire Line
+	3150 3400 3150 3900
+Connection ~ 3150 3400
+Wire Wire Line
+	3150 3600 3200 3600
+Connection ~ 3150 3500
+Wire Wire Line
+	3150 3900 3200 3900
+Connection ~ 3150 3600
+Wire Wire Line
+	3200 3800 3150 3800
+Connection ~ 3150 3800
+Wire Wire Line
+	3200 3700 3150 3700
+Connection ~ 3150 3700
+$Comp
+L GND #PWR9
+U 1 1 58342E0B
+P 8150 2850
+F 0 "#PWR9" H 8150 2600 50  0001 C CNN
+F 1 "GND" H 8150 2700 50  0000 C CNN
+F 2 "" H 8150 2850 50  0000 C CNN
+F 3 "" H 8150 2850 50  0000 C CNN
+	1    8150 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 2850 8250 2850
+$Comp
+L LTC6802-2 U6
+U 1 1 58343312
+P 7000 1400
+F 0 "U6" H 7000 2450 60  0000 C CNN
+F 1 "LTC6802-2" H 7000 2350 60  0000 C CNN
+F 2 "KiCad-Dev:SSOP-44" H 6850 1400 60  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 7000 2600 60  0001 C CNN
+	1    7000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 58343318
+P 6100 2850
+F 0 "#PWR7" H 6100 2600 50  0001 C CNN
+F 1 "GND" H 6100 2700 50  0000 C CNN
+F 2 "" H 6100 2850 50  0000 C CNN
+F 3 "" H 6100 2850 50  0000 C CNN
+	1    6100 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 2850 6200 2850
+$Comp
+L LTC6802-2 U8
+U 1 1 583433DD
+P 9050 4800
+F 0 "U8" H 9050 5850 60  0000 C CNN
+F 1 "LTC6802-2" H 9050 5750 60  0000 C CNN
+F 2 "KiCad-Dev:SSOP-44" H 8900 4800 60  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 9050 6000 60  0001 C CNN
+	1    9050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 583433E3
+P 8150 6250
+F 0 "#PWR10" H 8150 6000 50  0001 C CNN
+F 1 "GND" H 8150 6100 50  0000 C CNN
+F 2 "" H 8150 6250 50  0000 C CNN
+F 3 "" H 8150 6250 50  0000 C CNN
+	1    8150 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 6250 8250 6250
+$Comp
+L LTC6802-2 U7
+U 1 1 583433EA
+P 7000 4800
+F 0 "U7" H 7000 5850 60  0000 C CNN
+F 1 "LTC6802-2" H 7000 5750 60  0000 C CNN
+F 2 "KiCad-Dev:SSOP-44" H 6850 4800 60  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 7000 6000 60  0001 C CNN
+	1    7000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 583433F0
+P 6100 6250
+F 0 "#PWR8" H 6100 6000 50  0001 C CNN
+F 1 "GND" H 6100 6100 50  0000 C CNN
+F 2 "" H 6100 6250 50  0000 C CNN
+F 3 "" H 6100 6250 50  0000 C CNN
+	1    6100 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 6250 6200 6250
+$EndSCHEMATC
