@@ -1,4 +1,4 @@
-update=fre  4 nov 2016 10:50:58
+update=2016-11-24 20:58:04
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,8 +58,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=ltc6802
-LibName31=dev_switch
-LibName32=dev_mosfet
-LibName33=dev_ic
-LibName34=dev_conn
+LibName30=dev_switch
+LibName31=dev_mosfet
+LibName32=dev_ic
+LibName33=dev_conn
