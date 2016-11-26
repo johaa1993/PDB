@@ -18,7 +18,7 @@ This circuit is to test the [ADS7828](http://www.ti.com/lit/ds/symlink/ads7828.p
 
 ## Test circuit
 
-![Test circuit](Capture2.png)
+![Test circuit](Capture2.PNG)
 
 ### CRC Filter
 The CRC filter reduces noise for the `V_IC`.
