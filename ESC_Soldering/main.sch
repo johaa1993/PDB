@@ -475,7 +475,7 @@ Text Label 9200 5550 2    60   ~ 0
 PWM4
 Text Label 9200 5450 2    60   ~ 0
 PWM3
-Text Label 9200 5250 2    60   ~ 0
+Text Label 9200 5350 2    60   ~ 0
 PWM1
 Wire Wire Line
 	9800 5250 9750 5250
@@ -493,4 +493,6 @@ Wire Wire Line
 	9200 5250 9250 5250
 Wire Wire Line
 	9250 5350 9200 5350
+Text Label 9200 5250 2    60   ~ 0
+PW2
 $EndSCHEMATC
