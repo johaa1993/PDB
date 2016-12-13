@@ -455,44 +455,44 @@ Wire Wire Line
 $Comp
 L CONN_02X05 P5
 U 1 1 584FCE49
-P 9500 5350
-F 0 "P5" H 9500 5650 50  0000 C CNN
-F 1 "CONN_02X05" H 9500 5050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 9500 4150 50  0001 C CNN
-F 3 "" H 9500 4150 50  0000 C CNN
-	1    9500 5350
+P 9250 5350
+F 0 "P5" H 9250 5650 50  0000 C CNN
+F 1 "CONN_02X05" H 9250 5050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 9250 4150 50  0001 C CNN
+F 3 "" H 9250 4150 50  0000 C CNN
+	1    9250 5350
 	1    0    0    -1  
 $EndComp
-Text Label 9800 5550 0    60   ~ 0
+Text Label 9850 5550 0    60   ~ 0
 PWM5
-Text Label 9800 5450 0    60   ~ 0
+Text Label 9850 5450 0    60   ~ 0
 PWM6
-Text Label 9800 5350 0    60   ~ 0
+Text Label 9850 5350 0    60   ~ 0
 PWM7
-Text Label 9800 5250 0    60   ~ 0
+Text Label 9850 5250 0    60   ~ 0
 PWM8
-Text Label 9200 5550 2    60   ~ 0
+Text Label 8800 5550 2    60   ~ 0
 PWM4
-Text Label 9200 5450 2    60   ~ 0
+Text Label 8800 5450 2    60   ~ 0
 PWM3
-Text Label 9200 5350 2    60   ~ 0
+Text Label 8800 5250 2    60   ~ 0
 PWM1
 Wire Wire Line
-	9800 5250 9750 5250
+	9850 5250 9500 5250
 Wire Wire Line
-	9750 5350 9800 5350
+	9500 5350 9850 5350
 Wire Wire Line
-	9800 5450 9750 5450
+	9850 5450 9500 5450
 Wire Wire Line
-	9750 5550 9800 5550
+	9500 5550 9850 5550
+Text Label 8800 5350 2    60   ~ 0
+PWM2
 Wire Wire Line
-	9250 5550 9200 5550
+	8800 5550 9000 5550
 Wire Wire Line
-	9200 5450 9250 5450
+	9000 5250 8800 5250
 Wire Wire Line
-	9200 5250 9250 5250
+	8800 5450 9000 5450
 Wire Wire Line
-	9250 5350 9200 5350
-Text Label 9200 5250 2    60   ~ 0
-PW2
+	8800 5350 9000 5350
 $EndSCHEMATC
