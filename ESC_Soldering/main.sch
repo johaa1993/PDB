@@ -36,7 +36,7 @@ LIBS:dev_bjt
 LIBS:main-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A1 33110 23386
 encoding utf-8
 Sheet 1 3
 Title ""
@@ -71,14 +71,14 @@ F 3 "" H 6000 2950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Sheet
-S 9150 2800 1450 350 
+S 10300 2800 1450 350 
 U 584F1774
 F0 "pwr_mod_1" 60
 F1 "pwr_mod.sch" 60
-F2 "Power_Out" O R 10600 2850 60 
-F3 "Current_Feedback" O L 9150 3050 60 
-F4 "Power_Enable_A" I L 9150 2850 60 
-F5 "Power_Enanle_B" I L 9150 2950 60 
+F2 "Current_Feedback" O L 10300 3050 60 
+F3 "Power_Enable_A" I L 10300 2850 60 
+F4 "Power_Enanle_B" I L 10300 2950 60 
+F5 "Power_Out" I R 11750 2850 60 
 $EndSheet
 $Comp
 L +3.3V #PWR01
@@ -279,26 +279,194 @@ Text Label 3450 4550 2    60   ~ 0
 SDA
 Text Label 3450 4450 2    60   ~ 0
 SCL
-$Sheet
-S 9150 3300 1450 350 
-U 584F5DF6
-F0 "pwr_mod_2" 60
-F1 "pwr_mod.sch" 60
-F2 "Power_Out" O R 10600 3350 60 
-F3 "Current_Feedback" O L 9150 3550 60 
-F4 "Power_Enable_A" I L 9150 3350 60 
-F5 "Power_Enanle_B" I L 9150 3450 60 
-$EndSheet
 $Comp
 L CONN_01X02 P4
 U 1 1 584F8611
-P 9100 4300
-F 0 "P4" H 9100 4450 50  0000 C CNN
-F 1 "CONN_01X02" V 9200 4300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9100 4300 50  0001 C CNN
-F 3 "" H 9100 4300 50  0000 C CNN
-	1    9100 4300
+P 8850 4300
+F 0 "P4" H 8850 4450 50  0000 C CNN
+F 1 "CONN_01X02" V 8950 4300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8850 4300 50  0001 C CNN
+F 3 "" H 8850 4300 50  0000 C CNN
+	1    8850 4300
 	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR011
+U 1 1 584F8A66
+P 8900 4000
+F 0 "#PWR011" H 8900 3850 50  0001 C CNN
+F 1 "+3.3V" H 8900 4140 50  0000 C CNN
+F 2 "" H 8900 4000 50  0000 C CNN
+F 3 "" H 8900 4000 50  0000 C CNN
+	1    8900 4000
+	1    0    0    -1  
+$EndComp
+Text Label 9400 5750 2    60   ~ 0
+PWM5
+Text Label 9400 5850 2    60   ~ 0
+PWM6
+Text Label 9400 5950 2    60   ~ 0
+PWM7
+Text Label 9400 6050 2    60   ~ 0
+PWM8
+Text Label 9400 5650 2    60   ~ 0
+PWM4
+Text Label 9400 5550 2    60   ~ 0
+PWM3
+Text Label 9400 5350 2    60   ~ 0
+PWM1
+Text Label 9400 5450 2    60   ~ 0
+PWM2
+Text Label 12350 3000 2    60   ~ 0
+PWM1
+Text Label 12350 3500 2    60   ~ 0
+PWM2
+Text Label 10150 5350 2    60   ~ 0
+CH1
+Text Label 10150 5450 2    60   ~ 0
+CH2
+Text Label 10150 5550 2    60   ~ 0
+CH3
+Text Label 10150 5650 2    60   ~ 0
+CH4
+Text Label 10150 5750 2    60   ~ 0
+CH5
+Text Label 10150 5850 2    60   ~ 0
+CH6
+Text Label 10150 5950 2    60   ~ 0
+CH7
+Text Label 10150 6050 2    60   ~ 0
+CH8
+Text Label 8300 2950 0    60   ~ 0
+CH1
+Text Label 8300 3050 0    60   ~ 0
+CH2
+Text Label 8300 3150 0    60   ~ 0
+CH3
+Text Label 8300 3250 0    60   ~ 0
+CH4
+Text Label 8300 3350 0    60   ~ 0
+CH5
+Text Label 8300 3450 0    60   ~ 0
+CH6
+Text Label 8300 3550 0    60   ~ 0
+CH7
+Text Label 8300 3650 0    60   ~ 0
+CH8
+Text Label 8650 5350 2    60   ~ 0
+Enable_1
+Text Label 8650 5450 2    60   ~ 0
+Enable_2
+Text Label 8650 5550 2    60   ~ 0
+Enable_3
+Text Label 8650 5650 2    60   ~ 0
+Enable_4
+Text Label 8650 5750 2    60   ~ 0
+Enable_5
+Text Label 8650 5850 2    60   ~ 0
+Enable_6
+Text Label 8650 5950 2    60   ~ 0
+Enable_7
+Text Label 8650 6050 2    60   ~ 0
+Enable_8
+$Comp
+L CONN_01X10 P5
+U 1 1 58516EA2
+P 8850 5800
+F 0 "P5" H 8850 6350 50  0000 C CNN
+F 1 "CONN_01X10" V 8950 5800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 8850 5800 50  0001 C CNN
+F 3 "" H 8850 5800 50  0000 C CNN
+	1    8850 5800
+	1    0    0    -1  
+$EndComp
+Text Label 8650 6150 2    60   ~ 0
+Enable_9
+Text Label 8650 6250 2    60   ~ 0
+Enable_10
+$Comp
+L CONN_01X10 P6
+U 1 1 585173D6
+P 9600 5800
+F 0 "P6" H 9600 6350 50  0000 C CNN
+F 1 "CONN_01X10" V 9700 5800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 9600 5800 50  0001 C CNN
+F 3 "" H 9600 5800 50  0000 C CNN
+	1    9600 5800
+	1    0    0    -1  
+$EndComp
+Text Label 9400 6150 2    60   ~ 0
+PWM9
+Text Label 9400 6250 2    60   ~ 0
+PWM10
+$Comp
+L CONN_01X10 P7
+U 1 1 5851824A
+P 10350 5800
+F 0 "P7" H 10350 6350 50  0000 C CNN
+F 1 "CONN_01X10" V 10450 5800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 10350 5800 50  0001 C CNN
+F 3 "" H 10350 5800 50  0000 C CNN
+	1    10350 5800
+	1    0    0    -1  
+$EndComp
+Text Label 10150 6150 2    60   ~ 0
+CH9
+Text Label 10150 6250 2    60   ~ 0
+CH10
+$Comp
+L Littlebee U7
+U 1 1 58518E71
+P 12800 3050
+F 0 "U7" H 12800 3200 60  0000 C CNN
+F 1 "Littlebee" H 12800 3300 60  0000 C CNN
+F 2 "KiCad-Dev:Littlebee" H 13050 3050 60  0001 C CNN
+F 3 "" H 13050 3050 60  0001 C CNN
+	1    12800 3050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 10300 3300 1450 350 
+U 584F5DF6
+F0 "pwr_mod_2" 60
+F1 "pwr_mod.sch" 60
+F2 "Current_Feedback" O L 10300 3550 60 
+F3 "Power_Enable_A" I L 10300 3350 60 
+F4 "Power_Enanle_B" I L 10300 3450 60 
+F5 "Power_Out" I R 11750 3350 60 
+$EndSheet
+$Comp
+L Littlebee U8
+U 1 1 58519520
+P 12800 3550
+F 0 "U8" H 12800 3700 60  0000 C CNN
+F 1 "Littlebee" H 12800 3800 60  0000 C CNN
+F 2 "KiCad-Dev:Littlebee" H 13050 3550 60  0001 C CNN
+F 3 "" H 13050 3550 60  0001 C CNN
+	1    12800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5851952F
+P 13300 3650
+F 0 "#PWR012" H 13300 3400 50  0001 C CNN
+F 1 "GND" H 13300 3500 50  0000 C CNN
+F 2 "" H 13300 3650 50  0000 C CNN
+F 3 "" H 13300 3650 50  0000 C CNN
+	1    13300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 58518E82
+P 13300 3150
+F 0 "#PWR013" H 13300 2900 50  0001 C CNN
+F 1 "GND" H 13300 3000 50  0000 C CNN
+F 2 "" H 13300 3150 50  0000 C CNN
+F 3 "" H 13300 3150 50  0000 C CNN
+	1    13300 3150
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6150 2950 7250 2950
@@ -379,7 +547,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3250 7250 3250
 Wire Wire Line
-	9150 2850 9000 2850
+	9000 2850 10300 2850
 Wire Wire Line
 	9000 2850 9000 2150
 Wire Wire Line
@@ -419,7 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 3050 8250 3050
 Wire Wire Line
-	9150 3350 8950 3350
+	8950 3350 10300 3350
 Wire Wire Line
 	8950 3350 8950 2250
 Wire Wire Line
@@ -429,70 +597,82 @@ Wire Wire Line
 Wire Wire Line
 	8700 2950 8700 3050
 Wire Wire Line
-	8700 3050 9150 3050
+	8700 3050 10300 3050
 Wire Wire Line
-	8600 3550 9150 3550
+	8600 3550 10300 3550
 Wire Wire Line
-	9150 2950 9050 2950
+	8800 2950 10300 2950
 Wire Wire Line
-	9050 2950 9050 4100
+	8800 2950 8800 4100
 Wire Wire Line
-	9050 3450 9150 3450
-Connection ~ 9050 3450
+	8800 3450 10300 3450
+Connection ~ 8800 3450
+Wire Wire Line
+	8900 4000 8900 4100
+Wire Wire Line
+	8250 3150 8300 3150
+Wire Wire Line
+	8250 3250 8300 3250
+Wire Wire Line
+	8300 3350 8250 3350
+Wire Wire Line
+	8250 3450 8300 3450
+Wire Wire Line
+	8300 3550 8250 3550
+Wire Wire Line
+	8250 3650 8300 3650
+Wire Wire Line
+	13250 3000 13400 3000
+Wire Wire Line
+	12300 3100 12350 3100
+Wire Wire Line
+	13300 3150 13300 3100
+Wire Wire Line
+	13300 3100 13250 3100
+Wire Wire Line
+	13250 3500 13400 3500
+Wire Wire Line
+	12300 3600 12350 3600
+Wire Wire Line
+	13300 3650 13300 3600
+Wire Wire Line
+	13300 3600 13250 3600
 $Comp
-L +3.3V #PWR011
-U 1 1 584F8A66
-P 9150 4000
-F 0 "#PWR011" H 9150 3850 50  0001 C CNN
-F 1 "+3.3V" H 9150 4140 50  0000 C CNN
-F 2 "" H 9150 4000 50  0000 C CNN
-F 3 "" H 9150 4000 50  0000 C CNN
-	1    9150 4000
+L GND #PWR014
+U 1 1 58518E7A
+P 12300 3150
+F 0 "#PWR014" H 12300 2900 50  0001 C CNN
+F 1 "GND" H 12300 3000 50  0000 C CNN
+F 2 "" H 12300 3150 50  0000 C CNN
+F 3 "" H 12300 3150 50  0000 C CNN
+	1    12300 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 4000 9150 4100
+	12300 3150 12300 3100
+Wire Wire Line
+	12300 3650 12300 3600
 $Comp
-L CONN_02X05 P5
-U 1 1 584FCE49
-P 9250 5350
-F 0 "P5" H 9250 5650 50  0000 C CNN
-F 1 "CONN_02X05" H 9250 5050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 9250 4150 50  0001 C CNN
-F 3 "" H 9250 4150 50  0000 C CNN
-	1    9250 5350
+L GND #PWR015
+U 1 1 58519527
+P 12300 3650
+F 0 "#PWR015" H 12300 3400 50  0001 C CNN
+F 1 "GND" H 12300 3500 50  0000 C CNN
+F 2 "" H 12300 3650 50  0000 C CNN
+F 3 "" H 12300 3650 50  0000 C CNN
+	1    12300 3650
 	1    0    0    -1  
 $EndComp
-Text Label 9850 5550 0    60   ~ 0
-PWM5
-Text Label 9850 5450 0    60   ~ 0
-PWM6
-Text Label 9850 5350 0    60   ~ 0
-PWM7
-Text Label 9850 5250 0    60   ~ 0
-PWM8
-Text Label 8800 5550 2    60   ~ 0
-PWM4
-Text Label 8800 5450 2    60   ~ 0
-PWM3
-Text Label 8800 5250 2    60   ~ 0
-PWM1
 Wire Wire Line
-	9850 5250 9500 5250
+	11750 2850 13400 2850
 Wire Wire Line
-	9500 5350 9850 5350
+	13400 2850 13400 3000
 Wire Wire Line
-	9850 5450 9500 5450
+	11750 3350 13400 3350
 Wire Wire Line
-	9500 5550 9850 5550
-Text Label 8800 5350 2    60   ~ 0
-PWM2
-Wire Wire Line
-	8800 5550 9000 5550
-Wire Wire Line
-	9000 5250 8800 5250
-Wire Wire Line
-	8800 5450 9000 5450
-Wire Wire Line
-	8800 5350 9000 5350
+	13400 3350 13400 3500
+Text Label 10100 2850 2    60   ~ 0
+Enable_1
+Text Label 10100 3350 2    60   ~ 0
+Enable_2
 $EndSCHEMATC
