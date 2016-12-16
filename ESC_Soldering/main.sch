@@ -675,4 +675,59 @@ Text Label 10100 2850 2    60   ~ 0
 Enable_1
 Text Label 10100 3350 2    60   ~ 0
 Enable_2
+$Comp
+L LTC6802-2 U?
+U 1 1 5854091D
+P 12200 5600
+F 0 "U?" H 12200 6750 60  0000 C CNN
+F 1 "LTC6802-2" H 12200 6850 60  0000 C CNN
+F 2 "" H 11850 5600 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 12200 7200 60  0001 C CNN
+	1    12200 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SC18IS602B U?
+U 1 1 585409D8
+P 14550 6500
+F 0 "U?" H 14550 7050 60  0000 C CNN
+F 1 "SC18IS602B" H 14550 7150 60  0000 C CNN
+F 2 "" H 14550 6250 60  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/SC18IS602B.pdf" H 14550 7250 60  0001 C CNN
+	1    14550 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC6802-2 U?
+U 1 1 58540B70
+P 12250 8450
+F 0 "U?" H 12250 9600 60  0000 C CNN
+F 1 "LTC6802-2" H 12250 9700 60  0000 C CNN
+F 2 "" H 11900 8450 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 12250 10050 60  0001 C CNN
+	1    12250 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC6802-2 U?
+U 1 1 58540C42
+P 12300 11350
+F 0 "U?" H 12300 12500 60  0000 C CNN
+F 1 "LTC6802-2" H 12300 12600 60  0000 C CNN
+F 2 "" H 11950 11350 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 12300 12950 60  0001 C CNN
+	1    12300 11350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC6802-2 U?
+U 1 1 58540D7D
+P 13900 12500
+F 0 "U?" H 13900 13650 60  0000 C CNN
+F 1 "LTC6802-2" H 13900 13750 60  0000 C CNN
+F 2 "" H 13550 12500 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 13900 14100 60  0001 C CNN
+	1    13900 12500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
