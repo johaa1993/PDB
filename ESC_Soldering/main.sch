@@ -301,41 +301,41 @@ F 3 "" H 8900 4000 50  0000 C CNN
 	1    8900 4000
 	1    0    0    -1  
 $EndComp
-Text Label 9400 5750 2    60   ~ 0
+Text Label 16400 1600 2    60   ~ 0
 PWM5
-Text Label 9400 5850 2    60   ~ 0
+Text Label 16400 1700 2    60   ~ 0
 PWM6
-Text Label 9400 5950 2    60   ~ 0
+Text Label 16400 1800 2    60   ~ 0
 PWM7
-Text Label 9400 6050 2    60   ~ 0
+Text Label 16400 1900 2    60   ~ 0
 PWM8
-Text Label 9400 5650 2    60   ~ 0
+Text Label 16400 1500 2    60   ~ 0
 PWM4
-Text Label 9400 5550 2    60   ~ 0
+Text Label 16400 1400 2    60   ~ 0
 PWM3
-Text Label 9400 5350 2    60   ~ 0
+Text Label 16400 1200 2    60   ~ 0
 PWM1
-Text Label 9400 5450 2    60   ~ 0
+Text Label 16400 1300 2    60   ~ 0
 PWM2
 Text Label 12350 3000 2    60   ~ 0
 PWM1
 Text Label 12350 3500 2    60   ~ 0
 PWM2
-Text Label 10150 5350 2    60   ~ 0
+Text Label 17150 1200 2    60   ~ 0
 CH1
-Text Label 10150 5450 2    60   ~ 0
+Text Label 17150 1300 2    60   ~ 0
 CH2
-Text Label 10150 5550 2    60   ~ 0
+Text Label 17150 1400 2    60   ~ 0
 CH3
-Text Label 10150 5650 2    60   ~ 0
+Text Label 17150 1500 2    60   ~ 0
 CH4
-Text Label 10150 5750 2    60   ~ 0
+Text Label 17150 1600 2    60   ~ 0
 CH5
-Text Label 10150 5850 2    60   ~ 0
+Text Label 17150 1700 2    60   ~ 0
 CH6
-Text Label 10150 5950 2    60   ~ 0
+Text Label 17150 1800 2    60   ~ 0
 CH7
-Text Label 10150 6050 2    60   ~ 0
+Text Label 17150 1900 2    60   ~ 0
 CH8
 Text Label 8300 2950 0    60   ~ 0
 CH1
@@ -353,66 +353,66 @@ Text Label 8300 3550 0    60   ~ 0
 CH7
 Text Label 8300 3650 0    60   ~ 0
 CH8
-Text Label 8650 5350 2    60   ~ 0
+Text Label 15650 1200 2    60   ~ 0
 Enable_1
-Text Label 8650 5450 2    60   ~ 0
+Text Label 15650 1300 2    60   ~ 0
 Enable_2
-Text Label 8650 5550 2    60   ~ 0
+Text Label 15650 1400 2    60   ~ 0
 Enable_3
-Text Label 8650 5650 2    60   ~ 0
+Text Label 15650 1500 2    60   ~ 0
 Enable_4
-Text Label 8650 5750 2    60   ~ 0
+Text Label 15650 1600 2    60   ~ 0
 Enable_5
-Text Label 8650 5850 2    60   ~ 0
+Text Label 15650 1700 2    60   ~ 0
 Enable_6
-Text Label 8650 5950 2    60   ~ 0
+Text Label 15650 1800 2    60   ~ 0
 Enable_7
-Text Label 8650 6050 2    60   ~ 0
+Text Label 15650 1900 2    60   ~ 0
 Enable_8
 $Comp
 L CONN_01X10 P5
 U 1 1 58516EA2
-P 8850 5800
-F 0 "P5" H 8850 6350 50  0000 C CNN
-F 1 "CONN_01X10" V 8950 5800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 8850 5800 50  0001 C CNN
-F 3 "" H 8850 5800 50  0000 C CNN
-	1    8850 5800
+P 15850 1650
+F 0 "P5" H 15850 2200 50  0000 C CNN
+F 1 "CONN_01X10" V 15950 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 15850 1650 50  0001 C CNN
+F 3 "" H 15850 1650 50  0000 C CNN
+	1    15850 1650
 	1    0    0    -1  
 $EndComp
-Text Label 8650 6150 2    60   ~ 0
+Text Label 15650 2000 2    60   ~ 0
 Enable_9
-Text Label 8650 6250 2    60   ~ 0
+Text Label 15650 2100 2    60   ~ 0
 Enable_10
 $Comp
 L CONN_01X10 P6
 U 1 1 585173D6
-P 9600 5800
-F 0 "P6" H 9600 6350 50  0000 C CNN
-F 1 "CONN_01X10" V 9700 5800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 9600 5800 50  0001 C CNN
-F 3 "" H 9600 5800 50  0000 C CNN
-	1    9600 5800
+P 16600 1650
+F 0 "P6" H 16600 2200 50  0000 C CNN
+F 1 "CONN_01X10" V 16700 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 16600 1650 50  0001 C CNN
+F 3 "" H 16600 1650 50  0000 C CNN
+	1    16600 1650
 	1    0    0    -1  
 $EndComp
-Text Label 9400 6150 2    60   ~ 0
+Text Label 16400 2000 2    60   ~ 0
 PWM9
-Text Label 9400 6250 2    60   ~ 0
+Text Label 16400 2100 2    60   ~ 0
 PWM10
 $Comp
 L CONN_01X10 P7
 U 1 1 5851824A
-P 10350 5800
-F 0 "P7" H 10350 6350 50  0000 C CNN
-F 1 "CONN_01X10" V 10450 5800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 10350 5800 50  0001 C CNN
-F 3 "" H 10350 5800 50  0000 C CNN
-	1    10350 5800
+P 17350 1650
+F 0 "P7" H 17350 2200 50  0000 C CNN
+F 1 "CONN_01X10" V 17450 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 17350 1650 50  0001 C CNN
+F 3 "" H 17350 1650 50  0000 C CNN
+	1    17350 1650
 	1    0    0    -1  
 $EndComp
-Text Label 10150 6150 2    60   ~ 0
+Text Label 17150 2000 2    60   ~ 0
 CH9
-Text Label 10150 6250 2    60   ~ 0
+Text Label 17150 2100 2    60   ~ 0
 CH10
 $Comp
 L Littlebee U7
@@ -678,12 +678,12 @@ Enable_2
 $Comp
 L LTC6802-2 U?
 U 1 1 5854091D
-P 12200 5600
-F 0 "U?" H 12200 6750 60  0000 C CNN
-F 1 "LTC6802-2" H 12200 6850 60  0000 C CNN
-F 2 "" H 11850 5600 60  0000 C CNN
-F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 12200 7200 60  0001 C CNN
-	1    12200 5600
+P 20950 5700
+F 0 "U?" H 20950 6850 60  0000 C CNN
+F 1 "LTC6802-2" H 20950 6950 60  0000 C CNN
+F 2 "" H 20600 5700 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 20950 7300 60  0001 C CNN
+	1    20950 5700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -700,34 +700,34 @@ $EndComp
 $Comp
 L LTC6802-2 U?
 U 1 1 58540B70
-P 12250 8450
-F 0 "U?" H 12250 9600 60  0000 C CNN
-F 1 "LTC6802-2" H 12250 9700 60  0000 C CNN
-F 2 "" H 11900 8450 60  0000 C CNN
-F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 12250 10050 60  0001 C CNN
-	1    12250 8450
+P 21000 8550
+F 0 "U?" H 21000 9700 60  0000 C CNN
+F 1 "LTC6802-2" H 21000 9800 60  0000 C CNN
+F 2 "" H 20650 8550 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 21000 10150 60  0001 C CNN
+	1    21000 8550
 	1    0    0    -1  
 $EndComp
 $Comp
 L LTC6802-2 U?
 U 1 1 58540C42
-P 12300 11350
-F 0 "U?" H 12300 12500 60  0000 C CNN
-F 1 "LTC6802-2" H 12300 12600 60  0000 C CNN
-F 2 "" H 11950 11350 60  0000 C CNN
-F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 12300 12950 60  0001 C CNN
-	1    12300 11350
+P 21050 11450
+F 0 "U?" H 21050 12600 60  0000 C CNN
+F 1 "LTC6802-2" H 21050 12700 60  0000 C CNN
+F 2 "" H 20700 11450 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 21050 13050 60  0001 C CNN
+	1    21050 11450
 	1    0    0    -1  
 $EndComp
 $Comp
 L LTC6802-2 U?
 U 1 1 58540D7D
-P 13900 12500
-F 0 "U?" H 13900 13650 60  0000 C CNN
-F 1 "LTC6802-2" H 13900 13750 60  0000 C CNN
-F 2 "" H 13550 12500 60  0000 C CNN
-F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 13900 14100 60  0001 C CNN
-	1    13900 12500
+P 21000 14300
+F 0 "U?" H 21000 15450 60  0000 C CNN
+F 1 "LTC6802-2" H 21000 15550 60  0000 C CNN
+F 2 "" H 20650 14300 60  0000 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/68022fa.pdf" H 21000 15900 60  0001 C CNN
+	1    21000 14300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
