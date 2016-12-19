@@ -1,7 +1,7 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.4+e1-6308~48~ubuntu16.04.1-stable)
 
   (general
-    (links 0)
+    (links 649)
     (no_connects 626)
     (area -47.951428 16.5 279.804762 266.570001)
     (thickness 1.6)
@@ -1818,7 +1818,7 @@
   )
 
   (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 5415D6EA) (tstamp 58558190)
-    (at -14.994999 244.245)
+    (at 55.005001 241.245)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
     (path /58561785/58558771)
@@ -3589,7 +3589,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x13 (layer F.Cu) (tedit 0) (tstamp 585582E5)
-    (at -30.946667 234.095)
+    (at 39.053333 231.095)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /58561785/585574CF)
@@ -3644,7 +3644,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 0) (tstamp 585582EC)
-    (at -1.926667 234.095)
+    (at 68.073333 231.095)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /58561785/58558BF4)
@@ -3679,7 +3679,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 0) (tstamp 585582F3)
-    (at -11.986667 234.095)
+    (at 58.013333 231.095)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /58561785/58558C6B)
@@ -7776,7 +7776,7 @@
   )
 
   (module KiCad-Dev:SSOP-44 placed (layer F.Cu) (tedit 5146436F) (tstamp 585587EB)
-    (at -21.519056 235.361459)
+    (at 48.480944 232.361459)
     (path /58561785/58556E47)
     (solder_mask_margin 0.0508)
     (fp_text reference U34 (at 0.127 8.235542 270) (layer F.SilkS)
@@ -8496,7 +8496,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA3B)
-    (at -20.967619 253.995)
+    (at 49.032381 250.995)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/58556E86)
@@ -8529,7 +8529,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA40)
-    (at -11.317619 244.045)
+    (at 58.682381 241.045)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/58556F97)
@@ -8562,7 +8562,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA45)
-    (at -24.267619 256.145)
+    (at 45.732381 253.145)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/58557010)
@@ -8595,7 +8595,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA4A)
-    (at 4.752381 230.895)
+    (at 74.752381 227.895)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/5855701B)
@@ -8628,7 +8628,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA4F)
-    (at -17.667619 256.145)
+    (at 52.332381 253.145)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/585570B5)
@@ -8661,7 +8661,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA54)
-    (at -14.367619 250.295)
+    (at 55.632381 247.295)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/585570C0)
@@ -8694,7 +8694,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA59)
-    (at -17.667619 250.295)
+    (at 52.332381 247.295)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/5855713B)
@@ -8727,7 +8727,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA5E)
-    (at -24.267619 261.995)
+    (at 45.732381 258.995)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/58557146)
@@ -8760,7 +8760,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA63)
-    (at -20.967619 259.845)
+    (at 49.032381 256.845)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/585571AC)
@@ -8793,7 +8793,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA68)
-    (at -20.967619 248.145)
+    (at 49.032381 245.145)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/585571B7)
@@ -8826,7 +8826,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA6D)
-    (at -24.267619 250.295)
+    (at 45.732381 247.295)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/58557233)
@@ -8859,7 +8859,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58307B54) (tstamp 5855CA72)
-    (at -8.017619 244.045)
+    (at 61.982381 241.045)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /58561785/5855723E)

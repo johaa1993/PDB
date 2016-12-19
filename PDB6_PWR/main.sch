@@ -1,0 +1,294 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dev_switch
+LIBS:dev_mosfet
+LIBS:dev_ic
+LIBS:dev_conn
+LIBS:dev_bjt
+LIBS:main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AUIPS7111S U2
+U 1 1 5857EC51
+P 7900 2450
+F 0 "U2" H 7900 2700 60  0000 C CNN
+F 1 "AUIPS7111S" H 7900 2800 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-5Lead" H 7900 2450 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441780.pdf" H 8050 3050 60  0001 C CNN
+	1    7900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5857EC52
+P 4550 2800
+F 0 "R2" V 4630 2800 50  0000 C CNN
+F 1 "R" V 4550 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4480 2800 50  0001 C CNN
+F 3 "" H 4550 2800 50  0000 C CNN
+	1    4550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5857EC53
+P 4300 2550
+F 0 "R1" V 4380 2550 50  0000 C CNN
+F 1 "R" V 4300 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4230 2550 50  0001 C CNN
+F 3 "" H 4300 2550 50  0000 C CNN
+	1    4300 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5857EC54
+P 7400 2600
+F 0 "R4" V 7480 2600 50  0000 C CNN
+F 1 "R" V 7400 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7330 2600 50  0001 C CNN
+F 3 "" H 7400 2600 50  0000 C CNN
+	1    7400 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L BC847CE6327HTSA1 Q1
+U 1 1 5857EC55
+P 4850 2550
+F 0 "Q1" H 5050 2625 50  0000 L CNN
+F 1 "BC847CE6327HTSA1" H 5050 2550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5050 2475 50  0000 L CIN
+F 3 "http://www.farnell.com/datasheets/1496353.pdf" H 5050 2400 50  0001 L CNN
+	1    4850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 5857EC56
+P 5950 2500
+F 0 "D2" H 5950 2600 50  0000 C CNN
+F 1 "D" H 5950 2400 50  0000 C CNN
+F 2 "Diodes_SMD:D_0603" H 5950 2500 50  0001 C CNN
+F 3 "" H 5950 2500 50  0000 C CNN
+	1    5950 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5857EC57
+P 7100 2400
+F 0 "R3" V 7180 2400 50  0000 C CNN
+F 1 "R" V 7100 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7030 2400 50  0001 C CNN
+F 3 "" H 7100 2400 50  0000 C CNN
+	1    7100 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L +BATT #PWR01
+U 1 1 5857EC58
+P 8450 2300
+F 0 "#PWR01" H 8450 2150 50  0001 C CNN
+F 1 "+BATT" H 8450 2440 50  0000 C CNN
+F 2 "" H 8450 2300 50  0000 C CNN
+F 3 "" H 8450 2300 50  0000 C CNN
+	1    8450 2300
+	0    1    1    0   
+$EndComp
+Text HLabel 6450 2950 2    60   Output ~ 0
+Current_Feedback
+$Comp
+L GND #PWR02
+U 1 1 5857EC59
+P 1900 3200
+F 0 "#PWR02" H 1900 2950 50  0001 C CNN
+F 1 "GND" H 1900 3050 50  0000 C CNN
+F 2 "" H 1900 3200 50  0000 C CNN
+F 3 "" H 1900 3200 50  0000 C CNN
+	1    1900 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3200 2500 0    60   Input ~ 0
+Power_Enable_A
+$Comp
+L +3.3V #PWR03
+U 1 1 5857EC5A
+P 1900 1900
+F 0 "#PWR03" H 1900 1750 50  0001 C CNN
+F 1 "+3.3V" H 1900 2040 50  0000 C CNN
+F 2 "" H 1900 1900 50  0000 C CNN
+F 3 "" H 1900 1900 50  0000 C CNN
+	1    1900 1900
+	1    0    0    -1  
+$EndComp
+Text HLabel 3200 2600 0    60   Input ~ 0
+Power_Enanle_B
+Wire Wire Line
+	4950 2350 4950 2300
+Wire Wire Line
+	4950 2300 7500 2300
+Wire Wire Line
+	5950 2300 5950 2350
+Wire Wire Line
+	5950 3050 5950 2650
+Wire Wire Line
+	1900 3050 7400 3050
+Wire Wire Line
+	4950 3050 4950 2750
+Connection ~ 5950 2300
+Wire Wire Line
+	7250 2400 7500 2400
+Wire Wire Line
+	7400 2450 7400 2400
+Connection ~ 7400 2400
+Wire Wire Line
+	4550 2650 4550 2550
+Wire Wire Line
+	4450 2550 4650 2550
+Connection ~ 4550 2550
+Wire Wire Line
+	4550 2950 4550 3050
+Connection ~ 4950 3050
+Wire Wire Line
+	7400 3050 7400 2750
+Connection ~ 5950 3050
+Wire Wire Line
+	8450 2300 8250 2300
+Wire Wire Line
+	8250 2400 8350 2400
+Wire Wire Line
+	8350 2400 8350 2500
+Connection ~ 8350 2500
+Wire Wire Line
+	6950 2400 6300 2400
+Wire Wire Line
+	6300 2400 6300 2950
+Wire Wire Line
+	6300 2950 6450 2950
+Wire Wire Line
+	1900 2800 1900 3200
+Connection ~ 4550 3050
+Wire Wire Line
+	3200 2500 3250 2500
+Wire Wire Line
+	4050 2550 4150 2550
+Connection ~ 1900 3050
+Wire Wire Line
+	3200 2600 3250 2600
+Wire Wire Line
+	8250 2500 9000 2500
+Text HLabel 9000 2500 2    60   Input ~ 0
+Power_Out
+$Comp
+L C C1
+U 1 1 5857EC5B
+P 2250 2600
+F 0 "C1" H 2275 2700 50  0000 L CNN
+F 1 "C" H 2275 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2288 2450 50  0001 C CNN
+F 3 "" H 2250 2600 50  0000 C CNN
+	1    2250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1900 1900 2400
+$Comp
+L 74LVC1G08 U1
+U 1 1 5857EC5C
+P 3600 2550
+F 0 "U1" H 3700 2300 60  0000 C CNN
+F 1 "74LVC1G08" H 3900 2800 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-353" H 3550 2600 60  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74LVC1G08.pdf?" H 4100 2100 60  0001 C CNN
+	1    3600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2950 3600 3050
+Connection ~ 3600 3050
+Connection ~ 1900 2050
+Wire Wire Line
+	1900 2050 3600 2050
+Wire Wire Line
+	3600 2050 3600 2150
+$Comp
+L ZENER D1
+U 1 1 5857EC5D
+P 1900 2600
+F 0 "D1" H 1900 2700 50  0000 C CNN
+F 1 "5V" H 1900 2500 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 1900 2600 50  0001 C CNN
+F 3 "" H 1900 2600 50  0000 C CNN
+	1    1900 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2750 2250 3050
+Connection ~ 2250 3050
+Wire Wire Line
+	2250 2450 2250 2050
+Connection ~ 2250 2050
+$Comp
+L CONN_01X05 P?
+U 1 1 58580B80
+P 10050 2700
+F 0 "P?" H 10050 3000 50  0000 C CNN
+F 1 "CONN_01X05" V 10150 2700 50  0000 C CNN
+F 2 "" H 10050 2700 50  0000 C CNN
+F 3 "" H 10050 2700 50  0000 C CNN
+	1    10050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P?
+U 1 1 58580DBB
+P 10500 2700
+F 0 "P?" H 10500 3000 50  0000 C CNN
+F 1 "CONN_01X05" V 10600 2700 50  0000 C CNN
+F 2 "" H 10500 2700 50  0000 C CNN
+F 3 "" H 10500 2700 50  0000 C CNN
+	1    10500 2700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
