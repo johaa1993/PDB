@@ -5,7 +5,7 @@
     (no_connects 587)
     (area 11.924999 16.924999 152.075001 157.075001)
     (thickness 1.6)
-    (drawings 76)
+    (drawings 77)
     (tracks 43)
     (zones 0)
     (modules 230)
@@ -8711,6 +8711,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 4.3 4.3) (drill 4.3) (layers *.Cu *.Mask))
   )
 
+  (gr_line (start 12 161) (end 152 161) (layer Dwgs.User) (width 0.15))
   (gr_line (start 51 17) (end 51 41) (layer Dwgs.User) (width 0.15) (tstamp 585889CB))
   (gr_line (start 51 133) (end 51 157) (layer Dwgs.User) (width 0.15))
   (gr_line (start 89 112) (end 106 112) (layer Edge.Cuts) (width 0.15))
